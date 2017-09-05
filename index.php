@@ -9,12 +9,25 @@
 </head>
 <body style="background:#e0e0e0; overflow-x:hidden;">
 
+    <script type="text/javascript">
+var popup = 0;
+var cv = 0;
+var pj = 0;
+var bl = 0;
+var ct = 0;
+    </script>
+
 <style type="text/css">  
 .cvpage{
     width:100%;
     height:800px;
     background:red;
 }  
+.pjpage{
+    width:100%;
+    height:800px;
+    background:blue;
+} 
 .pagination{
     width:60%; height:40px; margin:auto; background:rgba(255,255,255,0);
     border:2px solid white;
@@ -113,50 +126,105 @@ include('css/style.php');
 <!--end pagination buttons-->
 
 <!--cv popup-->
-<div class="cv dead cvpage">
+<div class="cv cvpage">
 <div style="width:100%;  background:#000; text-align:center;">
-     <p id="up" style="color:white;"><b>^</b></p>
+     <p id="up1" style="color:white;"><b>^</b></p>
 </div>
 </div>
 <!--end cv popup-->
+<!--project popup-->
+<div class="pj pjpage">
+<div style="width:100%;  background:#000; text-align:center;">
+     <p id="up2" style="color:white;"><b>^</b></p>
+</div>
+</div>
+<!--end project popup-->
 
     <!--alt bod end-->
     </div>
 </body>
 <script type="text/javascript">
 
-var popup = 0;
-
 $(document).ready(function()
 {
+    $('.cv').hide()
+    $('.pj').hide()
     //switch pulse off
     $('#logo').removeClass('pulse')
 
 //toggle page buttons on click
-    $('#logo').click(function () {
-$('.responder').toggleClass('active')
-    });
 //add pulse on mouseover logo
     $('#logo').mouseover(function () {
   $('#logo').addClass('pulse')
+  $('.responder').addClass('active')
 });
 //remover pulse on mouseout logo
  $('#logo').mouseout(function () {
   $('#logo').removeClass('pulse')
 });
+
+//PAGE HANDLERS
  //pull up cv page on cv button click
 $('#btn1').click(function () {
     popup = 1;
-    $('.cv').toggleClass('active')
+    cv = 1;
+    $('.cv').fadeIn()
     $('html, body').animate({
         scrollTop: $(".cv").offset().top
     }, 1000);
+//close pj if cv open
+    if(pj == 1){
+    $('.pj').fadeOut()
+    pj = 0;
+    }
+
+    });
+//pull up project pj page on project button click
+$('#btn2').click(function () {
+    popup = 1;
+    pj = 1;
+    $('.pj').fadeIn()
+    $('html, body').animate({
+        scrollTop: $(".pj").offset().top
+    }, 1000);
+//close cv if pj open
+    if(cv == 1){
+    $('.cv').fadeOut()
+    cv = 0;
+    }
+
+    });
+//pull up blog bl page on blog button click
+$('#btn3').click(function () {
+    popup = 1;
+    pj = 1;
+    $('.pj').fadeIn()
+    $('html, body').animate({
+        scrollTop: $(".pj").offset().top
+    }, 1000);
+//close cv if pj open
+    if(cv == 1){
+    $('.cv').fadeOut()
+    cv = 0;
+    }
+
     });
 
- //pull up cv page on cv button click
-$('#up').click(function () {
+//up buttons
+ //close pj page on up button click
+$('#up2').click(function () {
     popup = 0;
-    $('.cv').toggleClass('active')
+    pj = 0;
+    $('.pj').slideUp()
+    $('html, body').animate({
+        scrollTop: $("body").offset().top
+    }, 1000);
+    });
+ //close cv page on up button click
+$('#up1').click(function () {
+    popup = 0;
+    cv = 0;
+    $('.cv').slideUp()
     $('html, body').animate({
         scrollTop: $("body").offset().top
     }, 1000);
