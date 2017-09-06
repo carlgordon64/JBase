@@ -5,6 +5,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+ <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 <body style="background:#e0e0e0; overflow-x:hidden; height:auto;">
@@ -22,95 +23,28 @@ var pj = 0;
 var bl = 0;
 var ct = 0;
     </script>
+    <style type="text/css">
+.glyphcv{
+    background-image:url('fonts/glyphicons/png/glyphicons-11-envelope.png');
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+    </style>
 
-<style type="text/css">  
-
-.pagination{
-    width:60%; height:40px; margin:auto; background:rgba(255,255,255,0);
-    border:2px solid white; text-align:center; color:white;
-}
-.pagination:hover{
-    cursor:pointer;
-}
-.pagination p{
-     color:white;
-    margin:auto;
-}
-.pagination a{
-    color:white;
-    text-align: center;
-    margin:auto;
-    text-decoration: none;
-}
-#mydiv {
-    width:100%;
-    margin:auto;
-    margin-top:80px;
-    height:300px;
-    background:rgba(0,0,0,0);
-    transition:0.4s ease all;
-}
-.responder{
-    max-width: 800px;
-    margin:auto;
-}
-
-.altbod{
-    height:auto;
-    margin:auto;
-    padding-top:280px;
-    max-width:1280px;
-    background:rgba(0,0,0,0.1);
-}
-.hide{
-    display:none;
-}
-.dead{
-    opacity:0;
-    visibility: hidden;
-    transition:0.9s ease;
-}
-.active{
-    opacity:1;
-    visibility: visible;
-    transition:0.9s ease;
-}
-
-#logo{
-    cursor:pointer;
-    margin:auto;
-    width:200px;
-     height:200px;
-     border-radius:100%;
-     background:#fff;
-}
-
-@-webkit-keyframes pulse{0%{-webkit-transform:scale(1.0);}
-    50%{-webkit-transform:scale(0.9);}
-    100%{-webkit-transform:scale(1.0);}
-}
-@keyframes pulse{0%{transform:scale(1.0);}
-50%{transform:scale(0.9);}
-100%{transform:scale(1.0);}
-}
-.pulse{-webkit-animation:pulse 1.2s infinite;-moz-animation:pulse 1.2s infinite;-ms-animation:pulse 1.2s infinite;animation:pulse 1.2s infinite;}
-
-
-</style>
-
-<nav style="background:#000; position:fixed; width:100%;"class="dead navbar navbar-default navbar-fixed-top">
-  <div class="row">
+<nav style="background:rgba(0,0,0,0.2); position:fixed; width:100%;"class="dead navbar navbar-default navbar-fixed-top">
+  <div class="row" style="margin:auto; width:800px;">
     <div class="col-sm-3"  >
-        <div class="pagination"><p>C.V</p></div>
+        <div id="btn1b" class="pagination"><p>C.V</p></div>
     </div>
     <div class="col-sm-3">
-        <div class="pagination"><p>Projects</p></div>
+        <div id="btn2b" class="pagination"><p>Projects</p></div>
     </div>
     <div class="col-sm-3">
-        <div class="pagination"><p>Blog</p></div>
+        <div id="btn3b" class="pagination"><p>Blog</p></div>
     </div>
     <div class="col-sm-3">
-        <div class="pagination"><p>Contact</p></div>
+        <div id="btn4b" class="pagination"><p>Contact</p></div>
     </div>
   </div>
 </nav>
@@ -124,7 +58,7 @@ var ct = 0;
 <!--pagination buttons-->
     <div class="row dead responder" id="mydiv">
     <div class="col-sm-3"  >
-        <div id="btn1" class="pagination"><a id="btn1" href="#">C.V</a></div>
+        <div id="btn1" class="pagination glyphcv"><a id="btn1" href="#"></a></div>
     </div>
     <div class="col-sm-3">
         <div id="btn2" class="pagination"><a id="btn2" href="#">Projects</a></div>
@@ -175,8 +109,22 @@ $('#btn1').click(function () {
         scrollTop: $(".cvpage").offset().top
     }, 1000);
     });
+ //scroll to cv page on btn1b click
+$('#btn1b').click(function () {
+    cv = 1;
+    $('html, body').animate({
+        scrollTop: $(".cvpage").offset().top
+    }, 1000);
+    });
  //scroll to pj page on btn2 click
 $('#btn2').click(function () {
+    pj = 1;
+    $('html, body').animate({
+        scrollTop: $(".pjpage").offset().top
+    }, 1000);
+    });
+//scroll to pj page on btn2b click
+$('#btn2b').click(function () {
     pj = 1;
     $('html, body').animate({
         scrollTop: $(".pjpage").offset().top
@@ -189,8 +137,22 @@ $('#btn3').click(function () {
         scrollTop: $(".blpage").offset().top
     }, 1000);
     });
+ //scroll to bl page on btn3b click
+$('#btn3b').click(function () {
+    bl = 1;
+    $('html, body').animate({
+        scrollTop: $(".blpage").offset().top
+    }, 1000);
+    });
  //scroll to ct page on btn4 click
 $('#btn4').click(function () {
+    ct = 1;
+    $('html, body').animate({
+        scrollTop: $(".ctpage").offset().top
+    }, 1000);
+    });
+//scroll to ct page on btn4b click
+$('#btn4b').click(function () {
     ct = 1;
     $('html, body').animate({
         scrollTop: $(".ctpage").offset().top
@@ -200,7 +162,7 @@ $('#btn4').click(function () {
 window.onscroll = function() {myFunction()};
 
 function myFunction() {
-    if (document.body.scrollTop > 840 || document.documentElement.scrollTop > 840) {
+    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
         $('nav').addClass('active')
     } else {
         $('nav').removeClass('active')
