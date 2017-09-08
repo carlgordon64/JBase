@@ -24,11 +24,16 @@ var bl = 0;
 var ct = 0;
     </script>
     <style type="text/css">
-.glyphcv{
-    background-image:url('fonts/glyphicons/png/glyphicons-11-envelope.png');
-    background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: 50%;
+
+svg {
+    fill: #fff;
+    width:30px;
+    height: auto;
+    margin:auto;
+}
+#cv-icon:hover path {
+    transition:0.4s ease all;
+    fill: yellow;
 }
     </style>
 
@@ -58,16 +63,16 @@ var ct = 0;
 <!--pagination buttons-->
     <div class="row dead responder" id="mydiv">
     <div class="col-sm-3"  >
-        <div id="btn1" class="pagination glyphcv"><a id="btn1" href="#"></a></div>
+        <div id="btn1" class="pagination"><img alt="C.V" id="cv-icon" class="svg social-link" src="svg/user-profile-on-smartwatch.svg"/></div>
     </div>
     <div class="col-sm-3">
-        <div id="btn2" class="pagination"><a id="btn2" href="#">Projects</a></div>
+        <div id="btn2" class="pagination"><img alt="Projects" id="cv-icon" class="svg social-link" src="svg/circle-menu.svg"/></div>
     </div>
     <div class="col-sm-3">
-        <div id="btn3" class="pagination"><a id="btn3" href="#">Blog</a></div>
+        <div id="btn3" class="pagination"><img alt="Contact" id="cv-icon" class="svg social-link" src="svg/folded-paper.svg"/></div>
     </div>
     <div class="col-sm-3">
-        <div id="btn4" class="pagination"><a id="btn4" href="#">Contact</a></div>
+        <div id="btn4" class="pagination"><img alt="Contact" id="cv-icon" class="svg social-link" src="svg/conversation-messages.svg"/></div>
     </div>
     </div>
 <!--end pagination buttons-->
@@ -81,6 +86,7 @@ var ct = 0;
     </div>
 
 </body>
+<script src="svg_control.js"></script>
 <script type="text/javascript">
 
 $(document).ready(function()
@@ -168,7 +174,11 @@ function myFunction() {
         $('nav').removeClass('active')
     }
 }
-
+//svg edit
+  /*
+     * Replace all SVG images with inline SVG
+     */
+       
 
 
 
