@@ -69,11 +69,13 @@ svg {
     right:10px;
     bottom:0px;
     cursor:pointer;
+    z-index: 16;
 
 }
 
 .cvmid{
-    background:rgba(0,0,0,0.1);
+    background:rgba(255,255,255,0.3);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
 }
 .cvleft{
     background:rgba(0,0,0,0.1);
@@ -98,11 +100,11 @@ svg {
 }
 
 .rating{
-    right:0px;
+    margin-right:10px;
     float:right;
-    padding-left:10px;
-    padding-right:10px;
-    background:#1b1f20;
+    width:110px;
+    min-height: 20px;
+    background:transparent;
 }
 ul :nth-child(2n+0){
 background:#fff;
@@ -208,21 +210,21 @@ background:rgba(0,0,0,0.1);
 <!--end pagination buttons-->
 
 
-<div class="cvpage">
+<div class="cvpage" style="overflow:hidden;">
 <div class="row" style="background:rgba(255,255,255,0); text-align:center;">
 <div class="col-md-4 cvleft" style="height:auto;">
     <p style="color:white; font-size:32px;">Design</p>
     <div class="skills" id="corners">
         <ul>   
-       <li>PhotoShop<span class="rating">1.2.3.4.5</span></li>
-       <li>MockPlus<span class="rating">1.2.3.4.5</span></li>
-       <li>Illustrator<span class="rating">1.2.3.4.5</span></li>
-       <li>Maya<span class="rating">1.2.3.4.5</span></li>
+       <li>PhotoShop<span class="rating" style="background-image:url('img/stars/5star.png'); background-size: cover;"></span></li>
+       <li>MockPlus<span class="rating" style="background-image:url('img/stars/5star.png'); background-size: cover;"></span></li>
+       <li>Illustrator<span class="rating" style="background-image:url('img/stars/5star.png'); background-size: cover;"></span></li>
+       <li>Maya<span class="rating" style="background-image:url('img/stars/5star.png'); background-size: cover;"></span></li>
         </ul>
 
     </div>
 </div>
-<div class="col-md-4 " style=" height:500px;">
+<div class="col-md-4 cvmid" style=" height:500px;">
 <p style="color:white; font-size:32px;">Carl Gordon</p>
 <div class="avatar"></div>
 <div class="well" style="padding-top:10px; ">
