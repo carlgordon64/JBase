@@ -18,7 +18,7 @@
 session_start();
 
 if(isset($_POST['add'])){
-     $colorset =rand(0,7);
+     $colorset =rand(0,8);
 }else{
     $colorset =0;
 }
@@ -49,10 +49,7 @@ svg {
     height: auto;
     margin:auto;
 }
-#cv-icon:hover path {
-    transition:0.4s ease all;
-    fill: yellow;
-}
+
 .altnav{
     position:fixed; top:76px; background:rgba(0,0,0,0.1); width:100%; height:30px; margin:auto;
 }
@@ -71,11 +68,6 @@ svg {
     cursor:pointer;
     z-index: 16;
 
-}
-
-
-.well p{
-    color:white;
 }
 .well{
     /*filter: blur(20px);*/
@@ -184,7 +176,22 @@ background:rgba(0,0,0,0.1);
 
 
 <div class="altbod">
-
+<div class="ball_row">
+<div id="ball1" class="cs_ball">
+</div>
+<div id="ball2" class="cs_ball">
+</div>
+<div id="ball3" class="cs_ball">
+</div>
+<div id="ball4" class="cs_ball">
+</div>
+<div id="ball5" class="cs_ball">
+</div>
+<div class="strikeout"></div>
+</div>
+<div class="well">
+<p style="color:#fff;"><?  echo "$schematic"; ?></p>
+</div>
 
     <!--page logo-->
 <div id="logo">
@@ -279,6 +286,11 @@ $(".readmore").click(function () {
       //expand readmore c.v section
    });
 
+$(".ball_row").click(function () {
+     
+      //expand readmore c.v section
+   });
+
     $('#logo').mouseover(function () {
   $('#logo').addClass('pulse')
 });
@@ -295,11 +307,12 @@ $('.scrolltop').click(function () {
     });
 
 
-$navHeight=76;
+$navHeight=106;
 //PAGE HANDLERS
  //element-panel on element-item click
 $('.element-item').click(function () {
     $('.element-panel').toggleClass('active')
+//$('.element-panel').toggle();
     });
  //scroll to top page on homebtn click
 $('#homebtn').click(function () {

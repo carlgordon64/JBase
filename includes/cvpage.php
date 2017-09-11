@@ -3,8 +3,9 @@ echo "
 <div class='cvpage' style='overflow:hidden;'>
 <div class='row' style='background:rgba(255,255,255,0); text-align:center;'>
 <div class='col-md-4 cvleft' style='height:auto;'>
-    <p style='color:white; font-size:32px;'>Design</p>
-
+<div class='well'>
+    <p style=' font-size:32px;'>Design</p>
+</div>
     <div class='skills' id='corners'>
         <div id='scroller' >
         <ul>   
@@ -17,7 +18,9 @@ echo "
     </div>
 </div>
 <div class='mid col-md-4 cvmid' style=' height:500px;'>
-<p style='color:white; font-size:32px;'>Carl Gordon</p>
+<div class='well'>
+<p style=' font-size:32px;'>Carl Gordon</p>
+</div>
 <div class='avatar'></div>
 <div class='well' style='padding-top:10px; '>
     <p style='font-size:24px;'>Developer + Designer</p>
@@ -28,7 +31,9 @@ echo "
 </div>
 </div>
 <div class='col-md-4 cvright' style=' height:500px;'>
-    <p style='color:white; font-size:32px;'>Development</p>
+<div class='well'>
+    <p style=' font-size:32px;'>Development</p>
+    </div>
     <div class='skills' id='corners'>
         <div id='scroller'>
       <ul>   
@@ -45,8 +50,11 @@ echo "
 <div class='row morecontent'>
     <div class='col-md-4 cvleft' style='height:auto;'>
         <div class='well' style='padding-top:0px; '>
+        
     <p style='font-size:24px;'>Experience:</p>
-    <p>Web Developer - CodeClouds NZ - 31/6/17 until present.</p>
+    <ul>
+    <li><p>Web Developer - CodeClouds NZ - 31/6/17 until present.</p></li>
+    </ul>
 </div>
     </div>
     <div class='mid col-md-4 cvmid2' style='height:auto;'>
@@ -56,9 +64,11 @@ echo "
     </div>
     <div class='col-md-4 cvright' style='height:auto;'>
         <div class='well' style='padding-top:0px; '>
-    <p style='font-size:24px;'>Referees:</p>
+    <p style='font-size:24px;'>Education:</p>
+    <ul>
+    <li><p>Bachelor of Design Innovation - Victoria University Wellington</p></li>
+    </ul>
     
-    <p>Codeclouds : (888) 888-8888 </p>
 </div>
     </div>
 </div>

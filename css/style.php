@@ -6,6 +6,14 @@ $pageY = "auto";
 
 $colorscheme = $_SESSION["colorset"];
 
+
+//colorscheme map
+//$cs_00= header bg color;
+//$cs_01= contacts bg color;
+//$cs_02= projects + skills bg color;
+//$cs_03= blog bg color;
+//$cs_04= contact bg color;
+//$cs_hi= highlight / pagination hover color;
 //color scheme swicth
 switch ($colorscheme) {
     case 1:
@@ -14,6 +22,9 @@ switch ($colorscheme) {
     $cs_02="#2F343B";
     $cs_03="#405F59";
     $cs_04="#A3D0C1";
+    $font_color="#000";
+    $cs_hi = "#A3D0C1";
+    $schematic = "mellow";
         break;
     case 2:
     $cs_00="#1F618C";
@@ -21,6 +32,9 @@ switch ($colorscheme) {
     $cs_02="#E74C3C";
     $cs_03="#ECF0F1";
     $cs_04="#3498DB";
+    $font_color="#fff";
+    $cs_hi = "#E74C3C";
+    $schematic = "honeypot";
         break;
     case 3:
     $cs_00="#1b1f20";
@@ -28,6 +42,9 @@ switch ($colorscheme) {
     $cs_02="#2F343B";
     $cs_03="#7E827A";
     $cs_04="#E3CDA4";
+    $font_color="#fff";
+    $cs_hi = "#703030";
+    $schematic = "vintage";
     break;
     case 4:
     $cs_00="#324D5C";
@@ -35,6 +52,9 @@ switch ($colorscheme) {
     $cs_02="#F0CA4D";
     $cs_03="#E37B40";
     $cs_04="#DE5B49";
+    $font_color="000";
+    $cs_hi = "#F0CA4D";
+    $schematic = "pineapple";
     break;
      case 5:
     $cs_00="#242C38";
@@ -42,6 +62,9 @@ switch ($colorscheme) {
     $cs_02="#FF9326";
     $cs_03="#E5462E";
     $cs_04="#FFFFFF";
+    $font_color="#fff";
+    $cs_hi = "#FF9326";
+    $schematic = "lemons";
     break;
     case 6:
     $cs_00="#DBEFE7";
@@ -49,6 +72,9 @@ switch ($colorscheme) {
     $cs_02="#F2F3F2";
     $cs_03="#A69B8C";
     $cs_04="#D6CCBC";
+    $font_color="#000";
+    $cs_hi = "#fff";
+    $schematic = "blanca";
     break;
      case 7:
     $cs_00="#272F32";
@@ -56,6 +82,19 @@ switch ($colorscheme) {
     $cs_02="#FFFFFF";
     $cs_03="#FF3D2E";
     $cs_04="#DAEAEF";
+    $font_color="#000";
+    $cs_hi = "#FF3D2E";
+    $schematic = "futurama";
+    break;
+      case 8:
+    $cs_00="#B85490";
+    $cs_01="#CFD66C";
+    $cs_02="#2D5B5E";
+    $cs_03="#B08914";
+    $cs_04="#8FC9FF";
+    $font_color="#000";
+    $cs_hi = "#2D5B5E";
+    $schematic = "candyland";
     break;
     default:
   $cs_00="#DBEFE7";
@@ -63,6 +102,9 @@ switch ($colorscheme) {
     $cs_02="#F2F3F2";
     $cs_03="#A69B8C";
     $cs_04="#D6CCBC";
+    $font_color="#1b1f20";
+    $cs_hi = "#1b1f20";
+    $schematic = "arctic";
 }
 
 
@@ -72,25 +114,25 @@ for ($i=0; $i <4 ; $i++) {
     switch ($i) {
     case 1:
     //Button 2 lasoo
-        $color1 = $cs_02;
+        $color1 = $cs_01;
         $color2 = $cs_02;
         $lassoLength = "800px";
         break;
     case 2:
     //Button 3 lasoo
-        $color1 = $cs_03;
+        $color1 = $cs_02;
         $color2 = $cs_03;
         $lassoLength = "1200px";
         break;
     case 3:
     //Button 4 lasoo
-        $color1 = $cs_04;
+        $color1 = $cs_03;
         $color2 = $cs_04;
         $lassoLength = "1700px";
         break;
     default:
     //Button 1 lasoo
-        $color1 = $cs_01;
+        $color1 = $cs_04;
         $color2 = $cs_01;
         $lassoLength = "300px";
 
@@ -143,10 +185,55 @@ for ($i=0; $i <4 ; $i++) {
 
 echo"
 <style type='text/css'>
+
 body{
     background:$cs_00;
 }
+.ball_row{
+    background:transparent;
+    padding:0px;
+    margin:auto;
+    width:100px;
+    height:auto;
+}
+.cs_ball{
+    position: relative;
+    display:inline-block;
+    z-index:1;
+    margin:auto;
+    width:15px;
+    height:15px;
+    background-color: transparent;
+    border-radius: 100%;
+    border:2px solid #fff;
+}
+.strikeout{
+    position:relative;
+    z-index:0;
+    top:-15px;
+    background-color:#fff;
+    width:80px;
+    height:2px;
 
+}
+#ball1{
+    background-color:$cs_00;
+}
+#ball2{
+    background-color:$cs_01;
+}
+#ball3{
+    background-color:$cs_02;
+}
+#ball4{
+    background-color:$cs_03;
+}
+#ball5{
+    background-color:$cs_04;
+}
+.down{
+    margin-top:70px;
+}
 .skills{
     width:100%;
     height:400px;
@@ -179,11 +266,17 @@ body{
      border:2px dashed #fff;
      background:#fff;
 }
-
+.well p{
+    color:$font_color;
+}
+#cv-icon:hover path {
+    transition:0.4s ease all;
+    fill: $cs_hi;
+}
 .altbod{
     height:auto;
     margin:auto;
-    padding-top:200px;
+    padding-top:150px;
     max-width:1280px;
     background:rgba(0,0,0,0.03);
 }
