@@ -6,7 +6,23 @@ body {
 }
 
 /* ---- button ---- */
-
+.readmore{
+  padding:10px;
+  border: none;
+  background:#fff;
+  width:40px;
+  height:40px;
+  color: #222;
+  font-family: raleway;
+  font-size: 24px;
+  text-shadow: 0 1px white;
+  cursor: pointer;
+  border-radius:100%;
+}
+.readmore p{
+  margin-top:-8px;
+  text-align: center;
+}
 .button {
   padding: 0.8em 1.0em;
   background: #EEE;
@@ -254,6 +270,11 @@ nav .pagination{
 }
 /*Media @ 1280px or larger*/
 @media screen and (min-width: 1280px) {
+
+  .cvpage{
+border-top-right-radius:10px;
+border-top-left-radius:10px;
+  }
 /* Alt bod for large display  */
 .altbod{
     height:auto;

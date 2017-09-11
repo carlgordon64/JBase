@@ -29,6 +29,34 @@ switch ($colorscheme) {
     $cs_03="#7E827A";
     $cs_04="#E3CDA4";
     break;
+    case 4:
+    $cs_00="#324D5C";
+    $cs_01="#46B29D";
+    $cs_02="#F0CA4D";
+    $cs_03="#E37B40";
+    $cs_04="#DE5B49";
+    break;
+     case 5:
+    $cs_00="#242C38";
+    $cs_01="#454C57";
+    $cs_02="#FF9326";
+    $cs_03="#E5462E";
+    $cs_04="#FFFFFF";
+    break;
+    case 6:
+    $cs_00="#DBEFE7";
+    $cs_01="#B2C8C6";
+    $cs_02="#F2F3F2";
+    $cs_03="#A69B8C";
+    $cs_04="#D6CCBC";
+    break;
+     case 7:
+    $cs_00="#272F32";
+    $cs_01="#9DBDC6";
+    $cs_02="#FFFFFF";
+    $cs_03="#FF3D2E";
+    $cs_04="#DAEAEF";
+    break;
     default:
     $cs_00="#2C3E50";
     $cs_01="#1A4F63";
@@ -112,10 +140,14 @@ for ($i=0; $i <4 ; $i++) {
 
 echo"
 <style type='text/css'>
+body{
+    background:$cs_00;
+}
+
 .skills{
     width:100%;
     height:400px;
-    overflow-y:scroll;
+    overflow:hidden;
     background:$cs_02;
 }
 .skills li{
@@ -150,7 +182,7 @@ echo"
     margin:auto;
     padding-top:200px;
     max-width:1280px;
-    background:$cs_00;
+    background:rgba(0,0,0,0.03);
 }
 
 .lassoHeadStretch{
