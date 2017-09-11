@@ -58,11 +58,11 @@ switch ($colorscheme) {
     $cs_04="#DAEAEF";
     break;
     default:
-    $cs_00="#2C3E50";
-    $cs_01="#1A4F63";
-    $cs_02="#068587";
-    $cs_03="#6FB07F";
-    $cs_04="#FCB03C";
+  $cs_00="#DBEFE7";
+    $cs_01="#B2C8C6";
+    $cs_02="#F2F3F2";
+    $cs_03="#A69B8C";
+    $cs_04="#D6CCBC";
 }
 
 
@@ -72,26 +72,26 @@ for ($i=0; $i <4 ; $i++) {
     switch ($i) {
     case 1:
     //Button 2 lasoo
-        $color1 = 'rgba(25,200,255,0.5)';
-        $color2 = 'rgba(25,200,255,0.5)';
+        $color1 = $cs_02;
+        $color2 = $cs_02;
         $lassoLength = "800px";
         break;
     case 2:
     //Button 3 lasoo
-        $color1 = 'rgba(0,255,200,0.5)';
-        $color2 = 'rgba(0,255,200,0.5)';
+        $color1 = $cs_03;
+        $color2 = $cs_03;
         $lassoLength = "1200px";
         break;
     case 3:
     //Button 4 lasoo
-        $color1 = 'rgba(255,0,230,0.5)';
-        $color2 = 'rgba(255,0,230,0.5)';
+        $color1 = $cs_04;
+        $color2 = $cs_04;
         $lassoLength = "1700px";
         break;
     default:
     //Button 1 lasoo
-        $color1 = 'rgba(0,0,0,0.5)';
-        $color2 = 'rgba(0,0,0,0.5)';
+        $color1 = $cs_01;
+        $color2 = $cs_01;
         $lassoLength = "300px";
 
 } 
@@ -126,8 +126,11 @@ for ($i=0; $i <4 ; $i++) {
     
     
 
-    @media screen and (max-width: 760px) {
+    @media screen and (max-width: 768px) {
 .lassoStretch$i{
+    display:none;
+    }
+    .lassoHead$i{
     display:none;
     }
 

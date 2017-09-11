@@ -4,9 +4,18 @@
 body {
   font-family: sans-serif;
 }
+.well{
+  text-align: center;
+}
 
 /* ---- button ---- */
 .readmore{
+  transition:0.4s ease all;
+  position: relative;
+  top:-40px;
+  margin:auto;
+  left:50%;
+  margin-left:-15px;
   padding:10px;
   border: none;
   background:#fff;
@@ -22,6 +31,29 @@ body {
 .readmore p{
   margin-top:-8px;
   text-align: center;
+}
+.cvmid{
+    background:rgba(255,255,255,0.3);
+    overflow-y:hidden; 
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
+.cvmid2{
+    background:rgba(255,255,255,0.3);
+    overflow-y:hidden; 
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
+.morecontent{
+    overflow: hidden;
+}
+.cvleft{
+    background:rgba(0,0,0,0.1);
+    padding-left:50px;
+    padding-right:50px;
+}
+.cvright{
+     background:rgba(0,0,0,0.1);
+    padding-left:50px;
+    padding-right:50px;
 }
 .button {
   padding: 0.8em 1.0em;
@@ -52,11 +84,9 @@ body {
 
 .button.is-checked {
   color: white;
-  text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
 }
 
 .button:active {
-  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
 }
 
 /* ---- button-group ---- */
@@ -95,7 +125,17 @@ body {
 }
 
 /* ---- .element-item ---- */
+.element-title{
+  position: absolute;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+  left: 50px;
+  top: -10px;
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+}
 .element-panel {
+  border:1px solid transparent;
   position: relative;
   float: left;
   top:140px;
@@ -103,7 +143,9 @@ body {
   height: 140px;
   padding: 0px;
   background: rgba(0,0,0,0.5);
-  color: #000;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+  cursor:pointer;
   /*
   border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -122,12 +164,14 @@ body {
   background: #888;
   color: #262524;
 border-radius:100%;
+cursor:pointer;
   /*
   border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;*/
 }
+
 .element-item:hover{
     transition:0.4s ease all;
     box-shadow: 2px 4px 5px rgba(0,0,0,0.2);
@@ -150,8 +194,9 @@ border-radius:100%;
 
 .element-item .symbol {
   position: absolute;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
   left: 50px;
-  top: 140px;
+  top: 130px;
   font-size: 32px;
   font-weight: bold;
   color: white;
@@ -170,9 +215,16 @@ border-radius:100%;
   font-size: 18px;
 }
 
-.element-item.website          { background: #F00; background: hsl(   0, 100%, 50%); }
-.element-item.coding  { background: #F80; background: hsl(  36, 100%, 50%); }
-.element-item.media     { background: #FF0; background: hsl(  72, 100%, 50%); }
+.element-item.website { background: #F00; background: hsl(   0, 100%, 50%); }
+.element-item.tech  { background: #F80; background: hsl(  36, 100%, 50%); }
+.element-item.media   { background: #FF0; background: hsl(  72, 100%, 50%); }
+
+.element-item.pj1{
+  background: #e0e0e0;
+  /*background-image:url('https://i.ytimg.com/vi/jY7ocf86HWQ/hqdefault.jpg');*/
+  background-size:cover;
+  background-position: 50%;
+}
 
 .glyphcv{
     background-image:url('././fonts/glyphicons/png/glyphicons-11-envelope.png');
@@ -182,7 +234,7 @@ border-radius:100%;
 .pagination{
     transition:0.4s ease all;
     border-radius:100%;
-    width:60px; height:60px; margin:auto; background:rgba(0,0,0,0);
+    width:60px; height:60px; margin:auto; background:rgba(0,0,0,0.05);
     border:2px solid white; text-align:center; color:white;
 }
 nav .pagination{
@@ -260,12 +312,43 @@ nav .pagination:hover{
 50%{transform:scale(0.9);}
 100%{transform:scale(1.0);}
 }
-.pulse{-webkit-animation:pulse 1.2s infinite;-moz-animation:pulse 1.2s infinite;-ms-animation:pulse 1.2s infinite;animation:pulse 1.2s infinite;}
+.pulse{-webkit-animation:pulse 1.2s normal;-moz-animation:pulse 1.2s normal;-ms-animation:pulse 1.2s normal;animation:pulse 1.2s normal;}
 
 /*Media @ 760px or smaller*/
 @media screen and (max-width: 760px) {
 nav .pagination{
     display:none;
+}
+.cvleft{
+    background:rgba(0,0,0,0.1);
+    padding-left:150px;
+    padding-right:150px;
+    padding-bottom: 20px;
+}
+.cvright{
+     background:rgba(0,0,0,0.1);
+    padding-left:150px;
+    padding-right:150px;
+    padding-bottom: 20px;
+}
+}
+/*Media @ 480px or smaller*/
+@media screen and (max-width: 480px) {
+  .pagination{
+    transition:0.4s ease all;
+    border-radius:0%;
+    width:100%; height:60px; margin:auto; background:rgba(0,0,0,0.05);
+    border:2px solid white; text-align:center; color:white;
+}
+.cvleft{
+    background:rgba(0,0,0,0.1);
+    padding-left:30px;
+    padding-right:30px;
+}
+.cvright{
+     background:rgba(0,0,0,0.1);
+    padding-left:30px;
+    padding-right:30px;
 }
 }
 /*Media @ 1280px or larger*/

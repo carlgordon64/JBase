@@ -73,28 +73,7 @@ svg {
 
 }
 
-.cvmid{
-    background:rgba(255,255,255,0.3);
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
-}
-.cvmid2{
-    background:rgba(255,255,255,0.3);
-    overflow-y:hidden; 
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
-}
-.morecontent{
-    overflow: hidden;
-}
-.cvleft{
-    background:rgba(0,0,0,0.1);
-    padding-left:60px;
-    padding-right:60px;
-}
-.cvright{
-     background:rgba(0,0,0,0.1);
-    padding-left:60px;
-    padding-right:60px;
-}
+
 .well p{
     color:white;
 }
@@ -113,6 +92,7 @@ svg {
     width:110px;
     min-height: 20px;
     background:transparent;
+    background-image:url('img/stars/5star.png');
 }
 ul :nth-child(2n+0){
 background:#fff;
@@ -234,133 +214,18 @@ background:rgba(0,0,0,0.1);
     </div>
 <!--end pagination buttons-->
 
-<!--START C.V PAGE CONTENT-->
-<div class="cvpage" style="overflow:hidden;">
-<div class="row" style="background:rgba(255,255,255,0); text-align:center;">
-<div class="col-md-4 cvleft" style="height:auto;">
-    <p style="color:white; font-size:32px;">Design</p>
-
-    <div class="skills" id="corners">
-        <div id="scroller" >
-        <ul>   
-       <li>PhotoShop<span class="rating" style="background-image:url('img/stars/5star.png'); background-size: cover;"></span></li>
-       <li>MockPlus<span class="rating" style="background-image:url('img/stars/5star.png'); background-size: cover;"></span></li>
-       <li>Illustrator<span class="rating" style="background-image:url('img/stars/5star.png'); background-size: cover;"></span></li>
-       <li>Maya<span class="rating" style="background-image:url('img/stars/5star.png'); background-size: cover;"></span></li>
-        <li>PhotoShop<span class="rating" style="background-image:url('img/stars/5star.png'); background-size: cover;"></span></li>
-       <li>MockPlus<span class="rating" style="background-image:url('img/stars/5star.png'); background-size: cover;"></span></li>
-       <li>Illustrator<span class="rating" style="background-image:url('img/stars/5star.png'); background-size: cover;"></span></li>
-       <li>Maya<span class="rating" style="background-image:url('img/stars/5star.png'); background-size: cover;"></span></li>
-<li>PhotoShop<span class="rating" style="background-image:url('img/stars/5star.png'); background-size: cover;"></span></li>
-       <li>MockPlus<span class="rating" style="background-image:url('img/stars/5star.png'); background-size: cover;"></span></li>
-       <li>Illustrator<span class="rating" style="background-image:url('img/stars/5star.png'); background-size: cover;"></span></li>
-       <li>Maya<span class="rating" style="background-image:url('img/stars/5star.png'); background-size: cover;"></span></li>
-        </ul>
-</div>
-    </div>
-</div>
-<div class="col-md-4 cvmid" style=" height:500px;">
-<p style="color:white; font-size:32px;">Carl Gordon</p>
-<div class="avatar"></div>
-<div class="well" style="padding-top:10px; ">
-    <p style="font-size:24px;">Developer + Designer</p>
-    <div class="breaker"></div>
-</div>
-<div class="well" style="padding:20px; ">
-    <p>Recent Bachelor of Design Innovation Graduate working as a Web Developer in Wellington, New Zealand.</p>
-</div>
-<button class="readmore"><p id="pTest">+</p></button>
-</div>
-<div class="col-md-4 cvright" style=" height:500px;">
-    <p style="color:white; font-size:32px;">Development</p>
-    <div class="skills" id="corners">
-        <div id="scroller">
-        <ul>   
-       <li>Php<span class="rating">1.2.3.4.5</span></li>
-       <li>html5<span class="rating">1.2.3.4.5</span></li>
-       <li>css<span class="rating">1.2.3.4.5</span></li>
-       <li>javaScript<span class="rating">1.2.3.4.5</span></li>
-        </ul>
-        </div>
-    </div>
-</div>
-</div>
-<!--C.V PAGE EXTRA CONTENT-->
-<div class="row morecontent">
-    <div class="col-md-4 cvleft" style="height:auto;">
-        1
-    </div>
-    <div class="col-md-4 cvmid2" style="height:auto;">
-        2
-    </div>
-    <div class="col-md-4 cvright" style="height:auto;">
-        3
-    </div>
-</div>
-</div>
-<!--END C.V PAGE CONTENT-->
-
-<!--START Project PAGE CONTENT-->
-<div class="pjpage" style="z-index:0; padding:0px; padding-top:20px;">
-    <!--Project filter buttons-->
-<div style=" text-align:center; width:100%;"><div id="filters" style="">  <button class="button is-checked" data-filter="*">show all</button>
-  <button class="button" data-filter=".website">website</button>
-  <button class="button" data-filter=".coding">coding</button>
-  <button class="button" data-filter=".media">media</button>
-</div></div>
-  <!--loop project tiles-->
-<div class="grid" style="max-width:1080px; margin:auto;">
-  <div class="element-item coding " data-category="coding">
-  <div class="element-panel dead">
-<div style="position:absolute;margin-top:90px; left:50%; margin-left:-15px;"><img alt="Projects" id="cv-icon" class="svg social-link" src="svg/private-eye.svg"/></div>
-  
-<p style="margin-top:40px; margin-left:30px; font-size:14px;">project one was a project built with made to</p>
-  </div>
-    <p class="symbol">Project one</p>
-    <p class="number">80</p>
-    <p class="weight">200.59</p>
-    
-  </div>
-  <div class="element-item website" data-category="website">
-    <h3 class="name">Tellurium</h3>
-    <p class="symbol">Te</p>
-    <p class="number">52</p>
-    <p class="weight">127.6</p>
-  </div>
-  <div class="element-item website" data-category="website">
-    <h3 class="name">Bismuth</h3>
-    <p class="symbol">Bi</p>
-    <p class="number">83</p>
-    <p class="weight">208.980</p>
-  </div>
-  <div class="element-item  website" data-category="website">
-    <h3 class="name">Lead</h3>
-    <p class="symbol">Pb</p>
-    <p class="number">82</p>
-    <p class="weight">207.2</p>
-  </div>
-  <div class="element-item coding" data-category="coding">
-    <h3 class="name">Gold</h3>
-    <p class="symbol">Au</p>
-    <p class="number">79</p>
-    <p class="weight">196.967</p>
-  </div>
-  <div class="element-item media" data-category="media">
-    <h3 class="name">Potassium</h3>
-    <p class="symbol">K</p>
-    <p class="number">19</p>
-    <p class="weight">39.0983</p>
-  </div>
-  <div class="element-item media" data-category="media">
-    <h3 class="name">Sodium</h3>
-    <p class="symbol">Na</p>
-    <p class="number">11</p>
-    <p class="weight">22.99</p>
-  </div>
-</div>
-<!--end loop project tiles-->
-</div>
-<!--END Project PAGE CONTENT-->
+<!-- COMPILE PAGE CONTENTS FROM INCLUDES-->
+    <!--START C.V PAGE CONTENT-->
+    <?
+    include('includes/cvpage.php');
+    ?>
+    <!--END C.V PAGE CONTENT-->
+    <!--START Project PAGE CONTENT-->
+    <?
+    include('includes/pjpage.php');
+    ?>
+    <!--END Project PAGE CONTENT-->
+    <!-- END COMPILE PAGE CONTENTS-->
 
 <!--START Blog PAGE CONTENT-->
 <div class="blpage">3</div>
@@ -386,19 +251,31 @@ setTimeout(fadeIn, 500);
 
 $(document).ready(function()
 {
+    //SCRIPT to add flex-first to col-sm-4 if window width < 760px
+  if ($(window).width() < 760) {
+   // alert('Less than 760');
+   $('.mid').addClass('flex-first')
+}
+else {
+    // alert('More than 760');
+    $('.mid').removeClass('flex-first')
+}
+//end script
+
     $('.cv').hide()
     $('.pj').hide()
     $('.morecontent').toggle();
     //switch pulse off
     $('#logo').removeClass('pulse')
-//toggle page buttons on click
-//add pulse on mouseover logo
+
+   
 
 $(".readmore").click(function () {
       $('#pTest').text(function(i, text){
           return text === "-" ? "+" : "-";
       })
       $('.morecontent').slideToggle();
+      $('#plusbutton').toggleClass('pulse')
       //expand readmore c.v section
    });
 
