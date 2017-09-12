@@ -19,7 +19,7 @@ echo "
 </div>
 <div class='mid col-md-4 cvmid' style=' height:500px;'>
 <div class='well'>
-<p style=' font-size:32px;'>Carl Gordon</p>
+<p style=' font-size:32px;'>Hi, I'm Carl Gordon</p>
 </div>
 <div class='avatar'></div>
 <div class='well' style='padding-top:10px; '>
@@ -27,7 +27,7 @@ echo "
     <div class='breaker'></div>
 </div>
 <div class='well' style='padding:20px; '>
-    <p>Recent Bachelor of Design Innovation Graduate working as a Web Developer in Wellington, New Zealand.</p>
+    <p>Recent Bachelor of Design Innovation Graduate with a passion for Innovation, Art and Technology, working as a Web Developer in Wellington, New Zealand.</p>
 </div>
 </div>
 <div class='col-md-4 cvright' style=' height:500px;'>
