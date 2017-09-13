@@ -28,11 +28,6 @@ if(isset($_POST['add'])){
  include('css/style.php');
 
 
-
-
-// $_SESSION["product"] = "Product Title";
-
-
 ?>
     <script type="text/javascript">
 var popup = 0;

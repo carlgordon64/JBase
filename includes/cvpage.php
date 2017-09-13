@@ -5,7 +5,6 @@ echo "
 <div class='col-md-4 cvleft' style='height:auto;'>
 <div class='well'>
     <p style=' font-size:32px;'>Design</p>
-</div>
     <div class='skills' id='corners'>
         <div id='scroller' >
         <ul>   
@@ -14,6 +13,7 @@ echo "
        <li>Illustrator<span class='rating' style=' background-size: cover;'></span></li>
        <li>Maya<span class='rating' style=' background-size: cover;'></span></li>
         </ul>
+        </div>
 </div>
     </div>
 </div>
@@ -21,7 +21,7 @@ echo "
 <div class='well'>
 <p style=' font-size:32px;'>Hi, I'm Carl Gordon</p>
 </div>
-<div class='avatar'></div>
+<div class='avatar'><div class='avatarimg me' ></div></div>
 <div class='well' style='padding-top:10px; '>
     <p style='font-size:24px;'>Developer + Designer</p>
     <div class='breaker'></div>
@@ -29,11 +29,13 @@ echo "
 <div class='well' style='padding:20px; '>
     <p>Recent Bachelor of Design Innovation Graduate with a passion for Innovation, Art and Technology, working as a Web Developer in Wellington, New Zealand.</p>
 </div>
+<div class='well'>
+<p>More</p>
+</div>
 </div>
 <div class='col-md-4 cvright' style=' height:500px;'>
 <div class='well'>
     <p style=' font-size:32px;'>Development</p>
-    </div>
     <div class='skills' id='corners'>
         <div id='scroller'>
       <ul>   
@@ -42,6 +44,7 @@ echo "
        <li>JS<span class='rating' style=' background-size: cover;'></span></li>
        <li>JQUERY<span class='rating' style=' background-size: cover;'></span></li>
         </ul>
+        </div>
         </div>
     </div>
 </div>
