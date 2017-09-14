@@ -198,6 +198,14 @@ echo"
 body{
     background:$cs_00;
 }
+.smallbreaker{
+    position:relative;
+    top:-10px;
+    width:100%;
+    height:2px;
+    background-color:$cs_00;
+
+}
 .ball_row{
     background:transparent;
     padding:0px;
@@ -248,7 +256,10 @@ body{
     height:400px;
     overflow:hidden;
     /* bg originally $cs_02 */
-    background:rgba(0,0,0,0.2);
+    background:rgba(0,0,0,0.05);
+     -moz-box-shadow:    inset 0 8px 20px rgba(0,0,0,0.1);
+   -webkit-box-shadow: inset 0 8px 20px rgba(0,0,0,0.1);
+   box-shadow:         inset 0 8px 20px rgba(0,0,0,0.1);
 }
 .skills li{
     color:white;

@@ -278,6 +278,8 @@ $(".readmore").click(function () {
       })
       $('.morecontent').slideToggle();
       $('#plusbutton').toggleClass('pulse')
+      $('#more').toggleClass('active')
+
       //expand readmore c.v section
    });
 

@@ -4,7 +4,8 @@ echo "
 <div class='row' style='background:rgba(255,255,255,0); text-align:center;'>
 <div class='col-md-4 cvleft' style='height:auto;'>
 <div class='well'>
-    <p style=' font-size:32px;'>Design</p>
+    <p style=' font-size:32px; '>Design</p>
+    <div class='smallbreaker'></div>
     <div class='skills' id='corners'>
         <div id='scroller' >
         <ul>   
@@ -30,12 +31,13 @@ echo "
     <p>Recent Bachelor of Design Innovation Graduate with a passion for Innovation, Art and Technology, working as a Web Developer in Wellington, New Zealand.</p>
 </div>
 <div class='well'>
-<p>More</p>
+<p id='more' class='dead active' >Read More</p>
 </div>
 </div>
 <div class='col-md-4 cvright' style=' height:500px;'>
 <div class='well'>
     <p style=' font-size:32px;'>Development</p>
+    <div class='smallbreaker'></div>
     <div class='skills' id='corners'>
         <div id='scroller'>
       <ul>   
@@ -55,6 +57,7 @@ echo "
         <div class='well' style='padding-top:0px; '>
         
     <p style='font-size:24px;'>Experience:</p>
+    <div class='smallbreaker'></div>
     <ul>
     <li><p>Web Developer - CodeClouds NZ - 31/6/17 until present.</p></li>
     </ul>
@@ -68,6 +71,7 @@ echo "
     <div class='col-md-4 cvright' style='height:auto;'>
         <div class='well' style='padding-top:0px; '>
     <p style='font-size:24px;'>Education:</p>
+    <div class='smallbreaker'></div>
     <ul>
     <li><p>Bachelor of Design Innovation - Victoria University Wellington</p></li>
     </ul>
