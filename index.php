@@ -39,13 +39,6 @@ var ct = 0;
     </script>
     <style type="text/css">
 
-svg {
-    fill: #fff;
-    width:30px;
-    height: auto;
-    margin:auto;
-}
-
 .altnav{
     position:fixed; top:76px; background:rgba(0,0,0,0.1); width:100%; height:30px; margin:auto;
 }
@@ -145,16 +138,16 @@ background:rgba(0,0,0,0.1);
   <div style="width:800px;  height:2px; position:fixed; background:#000; margin-top:30px;"></div>
 
     <div class="col-sm-3"  >
-        <div id="btn1b" class="pagination"><img alt="C.V" id="cv-icon" class="svg social-link" src="svg/user-profile-on-smartwatch.svg"/></div>
+        <div id="btn1b" class="pagination navicon01"><img alt="C.V" id="cv-icon" class="svg" src="svg/avatar-male.svg"/></div>
     </div>
     <div class="col-sm-3">
-        <div id="btn2b" class="pagination"><img alt="Projects" id="cv-icon" class="svg social-link" src="svg/circle-menu.svg"/></div>
+        <div id="btn2b" class="pagination navicon02"><img alt="Projects" id="cv-icon" class="svg" src="svg/circle-menu.svg"/></div>
     </div>
     <div class="col-sm-3">
-        <div id="btn3b" class="pagination"><img alt="Contact" id="cv-icon" class="svg social-link" src="svg/folded-paper.svg"/></div>
+        <div id="btn3b" class="pagination navicon03"><img alt="Contact" id="cv-icon" class="svg" src="svg/open-book.svg"/></div>
     </div>
     <div class="col-sm-3">
-        <div id="btn4b" class="pagination"><img alt="Contact" id="cv-icon" class="svg social-link" src="svg/conversation-messages.svg"/></div>
+        <div id="btn4b" class="pagination navicon04"><img alt="Contact" id="cv-icon" class="svg" src="svg/chat-bubbles.svg"/></div>
     </div>
   </div>
 
@@ -199,19 +192,19 @@ background:rgba(0,0,0,0.1);
 <!--pagination buttons-->
     <div class="row dead responder" id="mydiv">
     <div class="col-sm-3"  >
-        <div id="btn1" class="pagination"><img alt="C.V" id="cv-icon" class="svg social-link" src="svg/user-profile-on-smartwatch.svg"/></div>
+        <div id="btn1" class="pagination"><img alt="C.V" id="cv-icon" class="svg  " src="svg/avatar-male.svg"/></div>
     <div class="A01 lasso0"><div class="01 lassoHead0"></div></div>
     </div>
     <div class="col-sm-3">
-        <div id="btn2" class="pagination"><img alt="Projects" id="cv-icon" class="svg social-link" src="svg/circle-menu.svg"/></div>
+        <div id="btn2" class="pagination"><img alt="Projects" id="cv-icon" class="svg  " src="svg/circle-menu.svg"/></div>
     <div class="B02 lasso1"><div class="02 lassoHead1"></div></div>
     </div>
     <div class="col-sm-3">
-        <div id="btn3" class="pagination"><img alt="Contact" id="cv-icon" class="svg social-link" src="svg/folded-paper.svg"/></div>
+        <div id="btn3" class="pagination"><img alt="Contact" id="cv-icon" class="svg  " src="svg/open-book.svg"/></div>
     <div class="C03 lasso2"><div class="03 lassoHead2"></div></div>
     </div>
     <div class="col-sm-3">
-        <div id="btn4" class="pagination"><img alt="Contact" id="cv-icon" class="svg social-link" src="svg/conversation-messages.svg"/></div>
+        <div id="btn4" class="pagination"><img alt="Contact" id="cv-icon" class="svg  " src="svg/chat-bubbles.svg"/></div>
     <div class="D04 lasso3"><div class="04 lassoHead3"></div></div>
     </div>
     </div>
@@ -389,9 +382,11 @@ function myFunction() {
 //change text on scroll to projects
     if (document.body.scrollTop > 1100 || document.documentElement.scrollTop > 1100) {
 $(".altnav").html("<p class='sec-text'>Projects!<p>");
+$('.navicon02').css('border', '2px solid green');
 $('.scrolltop').addClass('active')
     }else{
     $('.scrolltop').removeClass('active')
+    $('.navicon02').css('border', '2px solid white');
 
     }
     //change text on scroll to blog

@@ -5,7 +5,7 @@ echo "
     <!--Project filter buttons-->
 <div style=' text-align:center; width:100%;'><div id='filters' style='margin-top:-20px;'>  
 <button class='button' data-filter='*'>show all</button>
-  <button class='button' data-filter='.website'>website</button>
+  <button class='button' data-filter='.website'>web</button>
   <button class='button' data-filter='.tech'>tech</button>
   <button class='button' data-filter='.media'>media</button>
 </div></div>
@@ -14,7 +14,7 @@ echo "
 
   <div class='element-item tech pj1' data-category='tech'>
   <div class='element-panel dead'>
-<div style='position:absolute;margin-top:105px; left:50%; margin-left:-15px;'><img alt='Projects' id='cv-icon' class='svg social-link' src='svg/private-eye.svg'/></div>
+<div style='position:absolute;margin-top:105px; left:50%; margin-left:-15px;'><img alt='Projects' id='cv-icon' class='svg  ' src='svg/private-eye.svg'/></div>
 <p class='element-title'>Project one</p>
 <p style='text-align:center;margin-top:35px;padding-left:16px; padding-right:16px; font-size:14px;'>Project One was a project built with tools, made to solve a specific problem.</p>
   </div>

@@ -116,6 +116,8 @@ switch ($colorscheme) {
     $schematic = "honeypot";
 }
 
+$_SESSION["color_hi"] = $cs_hi;
+
 
 //lasso styling
 for ($i=0; $i <4 ; $i++) { 
@@ -197,6 +199,65 @@ echo"
 
 body{
     background:$cs_00;
+}
+.pagination{
+    transition:0.4s ease all;
+    border-radius:100%;
+    width:60px; height:60px; margin:auto; background:rgba(0,0,0,0.05);
+    border:2px solid white; text-align:center; color:white;
+}
+nav .pagination{
+    transition:0.4s ease all;
+    border-radius:100%;
+    width:60px; height:60px; margin:auto; background:rgba(255,255,255,1);
+    border:2px solid white; text-align:center; color:white;
+}
+.border_hi{
+    border:2px solid $cs_hi; 
+}
+.pagination:hover{
+    transition:0.4s ease all;
+    cursor:pointer;
+    box-shadow: 2px 4px 5px rgba(0,0,0,0.2);
+    background:rgba(255,255,255,1);
+}
+.pagination:hover #cv-icon{
+    transition:0.4s ease all;
+    fill: $cs_hi;
+
+}
+nav .pagination:hover{
+    transition:0.4s ease all;
+    cursor:pointer;
+    box-shadow: 2px 4px 5px rgba(0,0,0,0.2);
+    background:rgba(255,255,255,1);
+}
+nav .pagination:hover #cv-icon{
+    transition:0.4s ease all;
+    fill: $cs_hi;
+
+}
+.pagination p{
+     color:white;
+    margin:auto;
+}
+.pagination a{
+    color:white;
+    text-align: center;
+    margin:auto;
+    text-decoration: none;
+}
+svg {
+    fill: #fff;
+    width:30px;
+    height: auto;
+    margin:auto;
+}
+nav svg {
+    fill: #000;
+    width:30px;
+    height: auto;
+    margin:auto;
 }
 .smallbreaker{
     position:relative;
@@ -311,10 +372,7 @@ body{
     font-family: 'Raleway', sans-serif;
     color:$font_color2;
 }
-#cv-icon:hover path {
-    transition:0.4s ease all;
-    fill: $cs_hi;
-}
+
 .altbod{
     height:auto;
     margin:auto;
@@ -368,6 +426,15 @@ p{
     height:$pageY;
     background:$cs_04;
 } 
+/*Media @ 480px or smaller*/
+@media screen and (max-width: 480px) {
+ .pagination{
+    transition:0.4s ease all;
+    border-radius:0%;
+    width:100%; height:60px; margin:auto; background:rgba(0,0,0,0.05);
+    border:2px solid white; text-align:center; color:white;
+}
+    }
 </style>
 ";
 
