@@ -4,10 +4,10 @@ echo "
 <button id='plusbutton' class='readmore'><p id='pTest'>+</p></button>
     <!--Project filter buttons-->
 <div style=' text-align:center; width:100%;'><div id='filters' style='margin-top:-20px;'>  
-<button class='button' data-filter='*'>show all</button>
-  <button class='button' data-filter='.website'>web</button>
-  <button class='button' data-filter='.tech'>tech</button>
-  <button class='button' data-filter='.media'>media</button>
+<button class='button allbtn' data-filter='*'>show all</button>
+  <button class='button webbtn' data-filter='.website'>web</button>
+  <button class='button techbtn' data-filter='.tech'>tech</button>
+  <button class='button mediabtn' data-filter='.media'>media</button>
 </div></div>
   <!--loop project tiles-->
 <div class='grid' style='max-width:1080px; margin:auto;'>

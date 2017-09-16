@@ -7,6 +7,8 @@ $pageY = "auto";
 $colorscheme = $_SESSION["colorset"];
 
 
+
+
 //colorscheme map
 //$cs_00= header bg color;
 //$cs_01= contacts bg color;
@@ -117,6 +119,7 @@ switch ($colorscheme) {
 }
 
 $_SESSION["color_hi"] = $cs_hi;
+$_SESSION["color_00"] = $cs_00;
 
 
 //lasso styling
@@ -148,19 +151,22 @@ for ($i=0; $i <4 ; $i++) {
         $lassoLength = "300px";
 
 } 
-
+$ii=$i+1;
+$color_iterate = ${'cs_0' . $ii};
     # code...
     echo "<style type='text/css'>
     .lassoHead$i{
         transition:1s ease all;
         z-index:15;
- border-radius:100%; width:20px; height:20px; position:inherit; margin:auto; margin-left:-10px; top:0px; background:white;  opacity:0.3; 
+ border-radius:100%; width:20px; height:20px; position:inherit; margin:auto; margin-left:-10px; top:0px; background:$color_iterate;  opacity:0.3; 
     }
 
      .lassoHeadStretch$i{
         transition:0.6s ease all;
         z-index:15;
-    top:$lassoLength; background:white; opacity:1; 
+    top:$lassoLength; 
+    background:$color_iterate;; 
+    opacity:1; 
     box-shadow: 0px 4px 5px rgba(0,0,0,0.2);
     }
 
@@ -329,7 +335,7 @@ nav svg {
     padding-top:20px;
     padding-bottom:20px;
     text-align: center;
-    border-bottom:1px solid white;
+    border-bottom:2px solid $cs_01;
 }
 .avatar{
     width:200px;

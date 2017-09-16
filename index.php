@@ -28,6 +28,9 @@ if(isset($_POST['add'])){
 
  include('css/style.php');
 
+$color_hi = $_SESSION["color_hi"] ;
+$color_00 = $_SESSION["color_00"] ;
+
 
 ?>
     <script type="text/javascript">
@@ -39,9 +42,7 @@ var ct = 0;
     </script>
     <style type="text/css">
 
-.altnav{
-    position:fixed; top:76px; background:rgba(0,0,0,0.1); width:100%; height:30px; margin:auto;
-}
+
 .sec-text{
     color:#fff;
     margin:auto;
@@ -128,41 +129,44 @@ background:rgba(0,0,0,0.1);
   background-color: red;
   outline: 1px solid red;
 }
-
+.col-xs-3{
+    padding-left: 10px; padding-right: 10px; z-index: 10;
+}
 
 }
 </style>
-<nav style="background:rgba(255,255,255,0.9); position:fixed; z-index:12;width:100%;"class="dead navbar navbar-default navbar-fixed-top">
+<nav style="background:<? echo $color_00 ?>; position:fixed; z-index:12;width:100%;"class="dead navbar navbar-default fixed-top">
   <p id="homebtn" style="position:fixed; margin-top:18px; margin-left:10px;">HOME</p>
-  <div class="row" style="margin:auto; width:800px;">
-  <div style="width:800px;  height:2px; position:fixed; background:#000; margin-top:30px;"></div>
+  <div class="row" >
+  <div style="width:330px;  height:2px; position:fixed; background:#000; margin-top:30px; left:50%; margin-left:-165px;"></div>
 
-    <div class="col-sm-3"  >
+<!-- margin left - (col-xs-3 padding + pagination width)/2 -->
+<div class="row"style="width:360px; position:relative; z-index:15; left:50%; margin-left:-160px;">
+    <div class="col-xs-3"  >
         <div id="btn1b" class="pagination navicon01"><img alt="C.V" id="cv-icon" class="svg" src="svg/avatar-male.svg"/></div>
     </div>
-    <div class="col-sm-3">
+    <div class="col-xs-3">
         <div id="btn2b" class="pagination navicon02"><img alt="Projects" id="cv-icon" class="svg" src="svg/circle-menu.svg"/></div>
     </div>
-    <div class="col-sm-3">
+    <div class="col-xs-3">
         <div id="btn3b" class="pagination navicon03"><img alt="Contact" id="cv-icon" class="svg" src="svg/open-book.svg"/></div>
     </div>
-    <div class="col-sm-3">
+    <div class="col-xs-3">
         <div id="btn4b" class="pagination navicon04"><img alt="Contact" id="cv-icon" class="svg" src="svg/chat-bubbles.svg"/></div>
     </div>
   </div>
-
+</div>
 </nav>
 <!--alt nav-->
 <div style="z-index:12; position:fixed;"id="smallnav" class="dead">  
     <div class="altnav"></div>
 </div>
 
-    <div class="scrolltop dead">
+   <!--  <div class="scrolltop dead">
     <p style="text-align:center; font-size:25px;position:fixed; right:55px;">^</p>
         <p style="text-align:center; font-size:25px;position:fixed; right:38px; bottom:10px;">TOP</p>
 
-</div>
-
+</div> -->
 
 <div class="altbod">
 <div class="ball_row">
@@ -247,14 +251,21 @@ setTimeout(fadeIn, 500);
 
 $(document).ready(function()
 {
+    
     //SCRIPT to add flex-first to col-sm-4 if window width < 760px
   if ($(window).width() < 760) {
    // alert('Less than 760');
+   $navHeight=30;
    $('.mid').addClass('flex-first')
+   $('nav').addClass('fixed-bottom')
+   $('nav').removeClass('fixed-top')
 }
 else {
     // alert('More than 760');
+    $navHeight=106;
     $('.mid').removeClass('flex-first')
+    $('nav').removeClass('fixed-bottom')
+    $('nav').addClass('fixed-top')
 }
 //end script
 
@@ -298,7 +309,6 @@ $('.scrolltop').click(function () {
     });
 
 
-$navHeight=106;
 //PAGE HANDLERS
  //element-panel on element-item click
 $('.element-item').click(function () {
@@ -370,32 +380,69 @@ $('#btn4b').click(function () {
 
 window.onscroll = function() {myFunction()};
 
+var push = 500;
+   $('.allbtn').click(function () {
+    push = 500;
+    console.log("push= "+push);
+    });
+     $('.webbtn').click(function () {
+    push = 0;
+    console.log("push= "+push);
+    });
+      $('.techbtn').click(function () {
+    push = 0;
+    console.log("push= "+push);
+    });
+       $('.allbtn').click(function () {
+    push = 0;
+    console.log("push= "+push);
+    });
+
 function myFunction() {
+    var cvsec = 600;
+    var projectsec = 1100;
+    var blogsec = 1600+push;
+    var contactsec = 2100+push;
+
     if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
         $('nav').addClass('active')
         $('#smallnav').addClass('active')
-        $(".altnav").html("<p class='sec-text'>C.V<p>");
+        
     } else {
         $('nav').removeClass('active')
          $('#smallnav').removeClass('active')
     }
+    //change text on scroll to C.V
+    if (document.documentElement.scrollTop > cvsec & document.documentElement.scrollTop < projectsec) {
+$(".altnav").html("<p class='sec-text'>C.V<p>");
+$('.navicon01').css('border', '2px solid <? echo $color_hi ?>');
+$('.scrolltop').addClass('active')
+    }else{
+    $('.scrolltop').removeClass('active')
+    $('.navicon01').css('border', '2px solid white');
+    }
 //change text on scroll to projects
-    if (document.body.scrollTop > 1100 || document.documentElement.scrollTop > 1100) {
+    if (document.documentElement.scrollTop > projectsec & document.documentElement.scrollTop < blogsec) {
 $(".altnav").html("<p class='sec-text'>Projects!<p>");
-$('.navicon02').css('border', '2px solid green');
+$('.navicon02').css('border', '2px solid <? echo $color_hi ?>');
 $('.scrolltop').addClass('active')
     }else{
     $('.scrolltop').removeClass('active')
     $('.navicon02').css('border', '2px solid white');
-
     }
     //change text on scroll to blog
-    if (document.body.scrollTop > 1600 || document.documentElement.scrollTop > 1600) {
+    if (document.documentElement.scrollTop > blogsec & document.documentElement.scrollTop < contactsec) {
 $(".altnav").html("<p class='sec-text'>Blog!<p>");
+$('.navicon03').css('border', '2px solid <? echo $color_hi ?>');
+    }else{
+$('.navicon03').css('border', '2px solid white');
     }
     //change text on scroll to contact
-    if (document.body.scrollTop > 2100 || document.documentElement.scrollTop > 2100) {
+    if (document.body.scrollTop > contactsec || document.documentElement.scrollTop > contactsec) {
 $(".altnav").html("<p class='sec-text'>contact!<p>");
+$('.navicon04').css('border', '2px solid <? echo $color_hi ?>');
+    }else{
+$('.navicon04').css('border', '2px solid white');
     }
 }
 //svg edit
