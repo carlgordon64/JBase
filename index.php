@@ -232,7 +232,23 @@ background:rgba(0,0,0,0.1);
 <!--END Blog PAGE CONTENT-->
 
 <!--START Contact PAGE CONTENT-->
-<div class="ctpage">4</div>
+<div class="ctpage">
+<div class='row' style='background:rgba(255,255,255,0); text-align:center;'>
+<div style="width:50%;
+height:250px;margin:auto;background:rgba(255,255,255,0.3);">
+    <div class='well'>
+<p style=' font-size:32px;'>Leave me a message</p>
+</div>
+<div style="width:90%; margin:auto; height:auto;">
+    <form action="#">
+<input class="chatmsg"type="text" placeholder="Type a message" name="chat"/>
+<input class="chatsub" type="submit" name="submit" value=">" id="submit" />
+</form>
+</div>
+</div>
+</div>
+
+</div>
 <!--END Contact PAGE CONTENT-->
 
     <!--alt bod end-->

@@ -1,5 +1,12 @@
 # JBase
 revamped folio focused on animation and user experience.
 
-Link for svg icon edit tutorial:
-https://stackoverflow.com/questions/11978995/how-to-change-color-of-svg-image-using-css-jquery-svg-image-replacement
+Latest version features tear away navigation bar, intuitive scrolling, bottom mobile navigation, dynamic styling with shuffle function, sharp svg icons, isotope project handler, 
+
+Recently done: 
+
+- C.V section near complete
+- Navigation bar optimised for all resolutions
+- Begun work on contact section (looking at integrating chatbot)
+
+

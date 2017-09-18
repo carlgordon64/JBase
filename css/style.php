@@ -432,6 +432,35 @@ p{
     height:$pageY;
     background:$cs_04;
 } 
+.chatsub{
+    width:80px;height:80px;
+    background:$cs_hi;
+    border:2px solid transparent;
+    position:relative;
+    top:-80px;
+    float:right;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.chatsub:hover{
+cursor:pointer;
+    }
+    .chatmsg:hover{
+cursor:text;
+    }
+.chatmsg{
+    width:100%;
+    height:80px;
+    font-size:24px;
+    color:#1b1f20;
+    padding-left:10px;
+    padding-right:90px;
+    border:2px solid transparent;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
 /*Media @ 480px or smaller*/
 @media screen and (max-width: 480px) {
  .pagination{
