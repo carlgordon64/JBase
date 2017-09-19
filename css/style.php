@@ -294,9 +294,9 @@ nav svg {
 .strikeout{
     position:relative;
     z-index:0;
-    top:-15px;
+    top:-18px;
     background-color:#fff;
-    width:80px;
+    width:85px;
     height:2px;
 
 }
@@ -423,9 +423,102 @@ p{
 .blpage{
     width:100%;
     min-height:500px;
+    padding-top:10px;
     height:$pageY;
     background:$cs_03;
 } 
+/* ---- page dots ---- */
+
+.flickity-page-dots {
+  position: absolute;
+  width: 100%;
+  bottom: -25px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  line-height: 1;
+}
+
+.flickity-rtl .flickity-page-dots { direction: rtl; }
+
+.flickity-page-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+  background: $cs_hi;
+  border-radius: 50%;
+  opacity: 0.25;
+  cursor: pointer;
+}
+
+.flickity-page-dots .dot.is-selected {
+  opacity: 1;
+}
+.carousel {
+  background: transparent;
+}
+
+.carousel-cell {
+    transition:0.4s ease all;
+  width: 48%;
+  height: 460px;
+  margin-right: 10px;
+  background: #fff;
+  opacity: 0.5;
+}
+
+.carousel-cell.is-selected {
+  opacity: 1;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: none;
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+.caro-title{
+    z-index:5;
+position:absolute; 
+bottom:0;
+width:100%; 
+border-bottom-right-radius: 8px; 
+border-bottom-left-radius: 8px;
+color:$font_color;
+background:$cs_01; height:auto; text-align:center;
+ padding-top:50px;
+ padding-bottom:10px;
+// padding-left:15px;
+// padding-right:15px;
+font-family: 'Raleway', sans-serif;
+}
+.caro-date{
+    z-index:15;
+    position:absolute; bottom:70px; left:30px;
+    width:80px; height:80px;
+    background-color:red;
+    border-radius:100%;
+}
+#month{
+    text-align:center;
+    color:$font_color;
+    font-family: 'Raleway', sans-serif;
+    margin-top:15px;
+
+}
+#date{
+    text-align:center;
+    color:$font_color;
+    font-family: 'Raleway', sans-serif;
+    margin-top:-30px;
+    font-size:24px;
+
+}
 .ctpage{
     width:100%;
     min-height:500px;
@@ -461,8 +554,19 @@ cursor:text;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;
 }
+/*Media @ 760px or smaller*/
+@media screen and (max-width: 760px) {
+    .carousel-cell {
+  width: 85%;
+}
+}
 /*Media @ 480px or smaller*/
 @media screen and (max-width: 480px) {
+    .caro-date{ bottom:70px; left:0px;
+}
+    .carousel-cell {
+  width: 95%;
+}
  .pagination{
     transition:0.4s ease all;
     border-radius:0%;

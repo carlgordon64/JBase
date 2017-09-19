@@ -13,14 +13,18 @@ echo "
 <div class='grid' style='max-width:1080px; margin:auto;'>
 
   <div class='element-item tech pj1' data-category='tech'>
-  <div class='element-panel dead'>
-<div style='position:absolute;margin-top:105px; left:50%; margin-left:-15px;'><img alt='Projects' id='cv-icon' class='svg  ' src='svg/private-eye.svg'/></div>
+
+  <div class='element-panel-top'>
+  <p class='number'>80</p>
+    <p class='weight'>200.59</p>
+ </div>
+  <div class='element-panel-bottom'>
+  <a href='#'><div style='position:absolute;margin-top:105px; left:50%; margin-left:-15px;'><img alt='Projects' id='cv-icon' class='svg  ' src='svg/private-eye.svg'/></div></a>
 <p class='element-title'>Project one</p>
 <p style='text-align:center;margin-top:35px;padding-left:16px; padding-right:16px; font-size:14px;'>Project One was a project built with tools, made to solve a specific problem.</p>
-  </div>
-    <p class='number'>80</p>
-    <p class='weight'>200.59</p>
-  </div>
+ 
+ </div>
+</div>
 
 
   <div class='element-item website' data-category='website'>

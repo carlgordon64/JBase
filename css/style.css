@@ -135,6 +135,43 @@ body {
   font-weight: bold;
   color: white;
 }
+.element-panel-top {
+  transition:0.4s ease all;
+  border:1px solid transparent;
+  position: relative;
+  float: left;
+  top:-140px;
+  width: 280px;
+  height: 140px;
+  padding: 0px;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+  cursor:pointer;
+}
+.slidedown{
+  transition:0.4s ease all;
+  top:0px;
+}
+.element-panel-bottom {
+  transition:0.4s ease all;
+  border:1px solid transparent;
+  position: relative;
+  float: left;
+  top:140px;
+  width: 280px;
+  height: 140px;
+  padding: 0px;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+  cursor:pointer;
+}
+.slideup{
+  transition:0.4s ease all;
+  top:0px;
+}
+
 .element-panel {
   border:1px solid transparent;
   position: relative;
@@ -206,7 +243,7 @@ cursor:pointer;
 .element-item .number {
   position: absolute;
   right: 8px;
-  top: 5px;
+  top: 140px;
 }
 
 .element-item .weight {

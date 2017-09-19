@@ -8,9 +8,12 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <link rel="stylesheet" href="css/flickity-docs.css">
  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
  <link rel="stylesheet" type="text/css" href="css/style.css">
  <link rel="stylesheet" type="text/css" href="css/hexstyle.css">
+
 
 </head>
 <body style="overflow-x:hidden; height:auto;">
@@ -132,6 +135,10 @@ background:rgba(0,0,0,0.1);
 .col-xs-3{
     padding-left: 10px; padding-right: 10px; z-index: 10;
 }
+/*  Flickety css */
+* { box-sizing: border-box; }
+
+
 
 }
 </style>
@@ -228,7 +235,23 @@ background:rgba(0,0,0,0.1);
     <!-- END COMPILE PAGE CONTENTS-->
 
 <!--START Blog PAGE CONTENT-->
-<div class="blpage">3</div>
+<div class="blpage">
+
+    <!-- Flickity HTML init -->
+<div class="carousel" data-flickity>
+  <div class="carousel-cell">
+    <div class="caro-date"><p id="month">Mar</p><p id="date">30</p></div>
+    <div class="caro-title"><h2>Project in Development</h2></div>
+    </div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+</div>
+
+</div>
 <!--END Blog PAGE CONTENT-->
 
 <!--START Contact PAGE CONTENT-->
@@ -328,7 +351,9 @@ $('.scrolltop').click(function () {
 //PAGE HANDLERS
  //element-panel on element-item click
 $('.element-item').click(function () {
-    $('.element-panel').toggleClass('active')
+    // $('.element-panel').toggleClass('active')
+    $('.element-panel-top').toggleClass('slidedown')
+    $('.element-panel-bottom').toggleClass('slideup')
 //$('.element-panel').toggle();
     });
  //scroll to top page on homebtn click
