@@ -18,6 +18,8 @@
 </head>
 <body style="overflow-x:hidden; height:auto;">
     <?php
+    // connect to Folio_db
+include ('includes/mysqli_connect.php');
 // Start the session
 session_start();
 
@@ -138,7 +140,9 @@ background:rgba(0,0,0,0.1);
 /*  Flickety css */
 * { box-sizing: border-box; }
 
-
+.foot{
+    width:100%; height:250px; background:rgba(255,255,255,0.3);
+}
 
 }
 </style>
@@ -257,18 +261,32 @@ background:rgba(0,0,0,0.1);
 <!--START Contact PAGE CONTENT-->
 <div class="ctpage">
 <div class='row' style='background:rgba(255,255,255,0); text-align:center;'>
-<div style="width:50%;
-height:250px;margin:auto;background:rgba(255,255,255,0.3);">
-    <div class='well'>
+
+<div style="width:60%;height:250px;margin:auto;background:rgba(255,255,255,0.3);">
+
+<div class='well'>
 <p style=' font-size:32px;'>Leave me a message</p>
 </div>
+
+<!-- Send message input -->
 <div style="width:90%; margin:auto; height:auto;">
-    <form action="#">
+<form action="#">
 <input class="chatmsg"type="text" placeholder="Type a message" name="chat"/>
 <input class="chatsub" type="submit" name="submit" value=">" id="submit" />
 </form>
 </div>
+<!-- END Send message input -->
+
 </div>
+<div class="foot">
+    <div style="width:60%; margin:auto; height:auto; background:rgba(255,255,255,0.3);">
+        <div class="social_icon"><img alt="LinkedIn" id="media-icon" class="svg" src="svg/linkedin_icon.svg"/>
+        </div><div class="social_icon"><img alt="Youtube" id="media-icon" class="svg" src="svg/youtube_icon.svg"/></div>
+        <div class="social_icon"><img alt="Github" id="media-icon" class="svg" src="svg/github_icon.svg"/></div>
+        <div class="social_icon"><img alt="Instructables" id="media-icon" class="svg" src="svg/instructables_icon.svg"/></div>
+    </div>
+</div>
+
 </div>
 
 </div>

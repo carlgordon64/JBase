@@ -259,6 +259,35 @@ svg {
     height: auto;
     margin:auto;
 }
+.social_icon{
+    width:80px; height:80px;
+    border-radius: 100%;
+    background:transparent;
+    margin-left: 20px; margin-right: 20px;
+    padding:0px;
+    display:inline-block;
+
+}
+.social_icon svg {
+    transition:0.4s ease all;
+    fill: #fff;
+    width:100%;
+    height: auto;
+    margin:auto;
+    display:inline-block;
+    margin-top:-12px;
+}
+.social_icon:hover #media-icon{
+    transition:0.4s ease all;
+    fill: $cs_hi;
+    cursor:pointer;
+    opacity:0.9;
+    
+
+}
+.social_icon:hover{
+box-shadow: 0px 0.5px 15px rgba(0,0,0,0.1);
+    }
 nav svg {
     fill: #000;
     width:30px;
