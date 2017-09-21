@@ -72,19 +72,10 @@ var ct = 0;
     height:2px;
     background-color: #fff;
 }
-
-.rating{
-    margin-right:10px;
-    float:right;
-    width:110px;
-    min-height: 20px;
-    background:transparent;
-    background-image:url('img/stars/5star.png');
-}
-ul :nth-child(2n+0){
-background:#fff;
+ul :nth-of-type(odd) li{
 background:rgba(0,0,0,0.1);
 }
+
 .projects{
     margin:auto; width:100%; background:rgba(255,255,255,0);
     text-align: center;
@@ -119,7 +110,7 @@ background:rgba(0,0,0,0.1);
     margin-left: -25%;
 }
 #scroller{
-    overflow-y:scroll;width:100%;height:100%;
+    overflow-y:hidden;width:100%;height:100%;
 
 }
 #scroller::-webkit-scrollbar {
@@ -140,9 +131,7 @@ background:rgba(0,0,0,0.1);
 /*  Flickety css */
 * { box-sizing: border-box; }
 
-.foot{
-    width:100%; height:250px; background:rgba(255,255,255,0.3);
-}
+
 
 }
 </style>
@@ -200,7 +189,7 @@ background:rgba(0,0,0,0.1);
     <!--page logo-->
 <div id="logo">
 <form action="index.php" method="post">
-<input class="logobtn" type="submit" name="add" value="" />
+<input class="logobtn" style="background-image:url('img/site_logo.png'); background-repeat:no-repeat; background-position:50%; background-size:cover;" type="submit" name="add" value="" />
 </form>
 </div>
 
@@ -260,10 +249,9 @@ background:rgba(0,0,0,0.1);
 
 <!--START Contact PAGE CONTENT-->
 <div class="ctpage">
-<div class='row' style='background:rgba(255,255,255,0); text-align:center;'>
+<div class='row' style='background:rgba(255,255,255,0); text-align:center; max-width:1280px; margin:auto;'>
 
-<div style="width:60%;height:250px;margin:auto;background:rgba(255,255,255,0.3);">
-
+<div class="contact-footer">
 <div class='well'>
 <p style=' font-size:32px;'>Leave me a message</p>
 </div>
@@ -279,7 +267,8 @@ background:rgba(0,0,0,0.1);
 
 </div>
 <div class="foot">
-    <div style="width:60%; margin:auto; height:auto; background:rgba(255,255,255,0.3);">
+    <div class="social-footer"> 
+        <p class="fc1">Or find me elsewhere..</p>
         <div class="social_icon"><img alt="LinkedIn" id="media-icon" class="svg" src="svg/linkedin_icon.svg"/>
         </div><div class="social_icon"><img alt="Youtube" id="media-icon" class="svg" src="svg/youtube_icon.svg"/></div>
         <div class="social_icon"><img alt="Github" id="media-icon" class="svg" src="svg/github_icon.svg"/></div>

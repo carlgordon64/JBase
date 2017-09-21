@@ -74,15 +74,15 @@ switch ($colorscheme) {
     $schematic = "lemons";
     break;
     case 6:
-    $cs_00="#DBEFE7";
-    $cs_01="#B2C8C6";
-    $cs_02="#F2F3F2";
-    $cs_03="#A69B8C";
-    $cs_04="#D6CCBC";
-    $font_color="#000";
-    $font_color2="#000";
-    $cs_hi = "#fff";
-    $schematic = "blanca";
+    $cs_00="#1F618C";
+    $cs_01="#2C3E50";
+    $cs_02="#E74C3C";
+    $cs_03="#ECF0F1";
+    $cs_04="#3498DB";
+    $font_color="#fff";
+    $font_color2="#fff";
+    $cs_hi = "#E74C3C";
+    $schematic = "honeypot";
     break;
      case 7:
     $cs_00="#272F32";
@@ -107,15 +107,15 @@ switch ($colorscheme) {
     $schematic = "candyland";
     break;
     default:
-    $cs_00="#1F618C";
-    $cs_01="#2C3E50";
-    $cs_02="#E74C3C";
-    $cs_03="#ECF0F1";
-    $cs_04="#3498DB";
-    $font_color="#fff";
-    $font_color2="#fff";
-    $cs_hi = "#E74C3C";
-    $schematic = "honeypot";
+     $cs_00="#DBEFE7";
+    $cs_01="#B2C8C6";
+    $cs_02="#F2F3F2";
+    $cs_03="#0b2b35";
+    $cs_04="#D6CCBC";
+    $font_color="#000";
+    $font_color2="#000";
+    $cs_hi = "#30e0c7";
+    $schematic = "blanca";
 }
 
 $_SESSION["color_hi"] = $cs_hi;
@@ -347,6 +347,76 @@ nav svg {
 .down{
     margin-top:70px;
 }
+/* rating margin top = half of skills li font size */
+.rating{
+    z-index:1;
+    position:relative;   
+    margin-right:10px;
+    float:right;
+    width:100px;
+    min-height: 10px;
+    margin-top:8px;
+    background:rgba(0,0,0,0.2);
+    border-bottom-right-radius: 4px; 
+border-bottom-left-radius: 4px;
+border-top-right-radius: 4px; 
+border-top-left-radius: 4px;
+overflow:hidden;
+}
+.rating span{
+    z-index:2;
+    position: absolute;
+    display: inline-block;
+    top:0;
+    width: 20px;
+    min-height: 10px;
+    background:$cs_hi;
+}
+.r1{
+    opacity:0.2;
+    z-index:2;
+    position: absolute;
+    display: inline-block;
+    top:0;
+    left:0;
+}
+.r2{
+    opacity:0.4;
+    z-index:2;
+    position: absolute;
+    display: inline-block;
+    top:0;
+    left:20px;
+}
+.r3{
+    opacity:0.6;
+    z-index:2;
+    position: absolute;
+    display: inline-block;
+    top:0;
+    left:40px;
+}
+.r4{
+    opacity:0.8;
+    z-index:2;
+    position: absolute;
+    display: inline-block;
+    top:0;
+    left:60px;
+}
+.r5{
+    opacity:1;
+    z-index:2;
+    position: absolute;
+    display: inline-block;
+    top:0;
+    left:80px;
+}
+// .rating :nth-child(2n+0){
+// background:$cs_hi;
+// opacity:0.6;
+// left:20px;
+// }
 .skills{
     width:100%;
     height:400px;
@@ -397,8 +467,20 @@ nav svg {
     width:200px;
      height:200px;
      border-radius:100%;
-     border:2px dashed #fff;
-     background:#fff;
+     border:2px solid transparent;
+     background:transparent;
+}
+.contact-footer{
+    width:60%;height:auto;margin:auto;background:rgba(255,255,255,0);
+}
+.social-footer{
+    width:60%; margin:auto; height:auto; background:rgba(255,255,255,0); position:absolute; bottom:10px; left:50%; margin-left:-30%;
+}
+.foot{
+    width:100%; min-height:250px; height:auto; background:rgba(255,255,255,0); position:relative; bottom:0px;
+}
+.fc1{
+    color:$font_color;
 }
 .well p{
     color:$font_color;
@@ -496,6 +578,10 @@ p{
   margin-right: 10px;
   background: #fff;
   opacity: 0.5;
+  border-bottom-right-radius: 8px; 
+border-bottom-left-radius: 8px;
+border-top-right-radius: 8px; 
+border-top-left-radius: 8px;
 }
 
 .carousel-cell.is-selected {
@@ -551,7 +637,7 @@ font-family: 'Raleway', sans-serif;
 .ctpage{
     width:100%;
     min-height:500px;
-    height:$pageY;
+    height:auto;
     background:$cs_04;
 } 
 .chatsub{
@@ -583,8 +669,22 @@ cursor:text;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;
 }
+/*Media @ 760px or larger*/
+@media screen and (min-width: 760px) {
+
+    }
 /*Media @ 760px or smaller*/
 @media screen and (max-width: 760px) {
+    .social-footer{
+    width:100%;
+    bottom:10px; left:0px; margin-left:0px;
+    }
+    .contact-footer{
+        width:100%;
+    }
+    .foot{
+    width:100%; min-height:250px; height:auto; margin-bottom:70px;
+}
     .carousel-cell {
   width: 85%;
 }

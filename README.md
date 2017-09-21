@@ -5,6 +5,7 @@ Latest version features: Flickity Carousel for blog tiles, sliding inside divs f
 
 Recently done: 
 
+- CG Logo added
 - C.V section near complete
 - Navigation bar optimised for all resolutions
 - Begun work on contact section (looking at integrating chatbot)

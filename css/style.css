@@ -34,7 +34,7 @@ body {
   text-align: center;
 }
 .cvmid{
-    background:rgba(255,255,255,0.3);
+    background:rgba(255,255,255,0.1);
     overflow-y:hidden; 
     box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
 }
@@ -305,7 +305,7 @@ cursor:pointer;
     width:200px;
      height:200px;
      border-radius:100%;
-     background:#fff;
+     background:transparent;
 }
 
 

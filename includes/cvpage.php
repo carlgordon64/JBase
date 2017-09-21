@@ -4,15 +4,17 @@ echo "
 <div class='row' style='background:rgba(255,255,255,0); text-align:center;'>
 <div class='col-md-4 cvleft' style='height:auto;'>
 <div class='well'>
-    <p style=' font-size:32px; '>Design</p>
+    <p style=' font-size:32px; '>Development</p>
     <div class='smallbreaker'></div>
     <div class='skills' id='corners'>
         <div id='scroller' >
         <ul>   
-       <li>PhotoShop<span class='rating' style='background-size: cover;'></span></li>
-       <li>MockPlus<span class='rating' style=' background-size: cover;'></span></li>
-       <li>Illustrator<span class='rating' style=' background-size: cover;'></span></li>
-       <li>Maya<span class='rating' style=' background-size: cover;'></span></li>
+        <li>Php<span class='rating' style='background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span><span class='r4'></span><span class='r5'></span></span></li>
+       <li>JavaScript<span class='rating' style=' background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span><span class='r4'></span></span></span></li>
+       <li>Processing<span class='rating' style=' background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span><span class='r4'></span><span class='r5'></span></span></span></li>
+       <li>SQL<span class='rating' style=' background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span><span class='r4'></span><span class='r5'></span></span></span></li>
+        <li>JQuery<span class='rating' style=' background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span><span class='r4'></span><span class='r5'></span></span></span></li>      
+        <li>CSS<span class='rating' style=' background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span><span class='r4'></span><span class='r5'></span></span></span></li>  
         </ul>
         </div>
 </div>
@@ -28,7 +30,7 @@ echo "
     <div class='breaker'></div>
 </div>
 <div class='well' style='padding:20px; '>
-    <p>Recent Bachelor of Design Innovation Graduate with a passion for Innovation, Art and Technology, working as a Web Developer in Wellington, New Zealand.</p>
+    <p>Aficionado of Technology and Art with a Bachelor of Design Innovation, working as a Web Developer in Wellington, New Zealand.</p>
 </div>
 <div class='well'>
 <p id='more' class='dead active' >Read More</p>
@@ -36,16 +38,18 @@ echo "
 </div>
 <div class='col-md-4 cvright' style=' height:500px;'>
 <div class='well'>
-    <p style=' font-size:32px;'>Development</p>
+    <p style=' font-size:32px;'>Design</p>
     <div class='smallbreaker'></div>
     <div class='skills' id='corners'>
         <div id='scroller'>
       <ul>   
-       <li>PHP<span class='rating' style='background-size: cover;'></span></li>
-       <li>JAVA<span class='rating' style=' background-size: cover;'></span></li>
-       <li>JS<span class='rating' style=' background-size: cover;'></span></li>
-       <li>JQUERY<span class='rating' style=' background-size: cover;'></span></li>
-        </ul>
+      <li>PhotoShop<span class='rating' style='background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span><span class='r4'></span><span class='r5'></span></span></li>
+       <li>Illustrator<span class='rating' style=' background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span><span class='r4'></span></span></span></li>
+       <li>MockPlus<span class='rating' style=' background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span></span></span></li>
+       <li>Audition<span class='rating' style=' background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span><span class='r4'></span><span class='r5'></span></span></span></li>
+        <li>Premiere<span class='rating' style=' background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span><span class='r4'></span><span class='r5'></span></span></span></li>
+        
+      </ul>
         </div>
         </div>
     </div>
