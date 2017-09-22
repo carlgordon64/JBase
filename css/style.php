@@ -42,13 +42,13 @@ switch ($colorscheme) {
         break;
     case 3:
     $cs_00="#1b1f20";
-    $cs_01="#703030";
+    $cs_01="#242C38";
     $cs_02="#2F343B";
     $cs_03="#7E827A";
-    $cs_04="#E3CDA4";
+    $cs_04="#7E827A";
     $font_color="#fff";
     $font_color2="#fff";
-    $cs_hi = "#703030";
+    $cs_hi = "#FD775A";
     $schematic = "vintage";
     break;
     case 4:
@@ -63,15 +63,15 @@ switch ($colorscheme) {
     $schematic = "pineapple";
     break;
      case 5:
-    $cs_00="#242C38";
-    $cs_01="#454C57";
-    $cs_02="#FF9326";
-    $cs_03="#E5462E";
-    $cs_04="#FFFFFF";
-    $font_color="#fff";
-    $font_color2="#fff";
-    $cs_hi = "#FF9326";
-    $schematic = "lemons";
+    $cs_00="#DBEFE7";
+    $cs_01="#B2C8C6";
+    $cs_02="#F2F3F2";
+    $cs_03="#0b2b35";
+    $cs_04="#D6CCBC";
+    $font_color="#000";
+    $font_color2="#000";
+    $cs_hi = "#0b2b35";
+    $schematic = "blanca";
     break;
     case 6:
     $cs_00="#1F618C";
@@ -106,16 +106,27 @@ switch ($colorscheme) {
     $cs_hi = "#2D5B5E";
     $schematic = "candyland";
     break;
+     case 9:
+    $cs_00="#242C38";
+    $cs_01="#454C57";
+    $cs_02="#FF9326";
+    $cs_03="#E5462E";
+    $cs_04="#FFFFFF";
+    $font_color="#fff";
+    $font_color2="#fff";
+    $cs_hi = "#FF9326";
+    $schematic = "lemons";
+    break;
     default:
-     $cs_00="#DBEFE7";
-    $cs_01="#B2C8C6";
-    $cs_02="#F2F3F2";
-    $cs_03="#0b2b35";
-    $cs_04="#D6CCBC";
-    $font_color="#000";
-    $font_color2="#000";
-    $cs_hi = "#30e0c7";
-    $schematic = "blanca";
+    $cs_00="#242C38";
+    $cs_01="#454C57";
+    $cs_02="#242C38";
+    $cs_03="#FF625F";
+    $cs_04="#FF625F";
+    $font_color="#fff";
+    $font_color2="#fff";
+    $cs_hi = "#5ED1E3";
+    $schematic = "nova";
 }
 
 $_SESSION["color_hi"] = $cs_hi;
@@ -440,7 +451,7 @@ overflow:hidden;
     width:200px;
     height:200px;
     background: $cs_00;
-    border:2px dashed white;
+    border:2px solid transparent;
     border-radius: 100%;
     margin:auto;
 }

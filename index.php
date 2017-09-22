@@ -19,12 +19,12 @@
 <body style="overflow-x:hidden; height:auto;">
     <?php
     // connect to Folio_db
-include ('includes/mysqli_connect.php');
+//include ('includes/mysqli_connect.php');
 // Start the session
 session_start();
 
 if(isset($_POST['add'])){
-     $colorset =rand(0,8);
+     $colorset =rand(0,9);
 }else{
     $colorset =0;
 }
@@ -189,7 +189,7 @@ background:rgba(0,0,0,0.1);
     <!--page logo-->
 <div id="logo">
 <form action="index.php" method="post">
-<input class="logobtn" style="background-image:url('img/site_logo.png'); background-repeat:no-repeat; background-position:50%; background-size:cover;" type="submit" name="add" value="" />
+<input class="logobtn" style="background-image:url('img/site_logo_2.png'); background-repeat:no-repeat; background-position:50%; background-size:100% auto;" type="submit" name="add" value="" />
 </form>
 </div>
 
