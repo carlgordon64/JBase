@@ -53,15 +53,18 @@ $('.button-group').each( function( i, buttonGroup ) {
     $( this ).addClass('is-checked');
   });
 });
+
     //carousel controls
 // next clicked
-$( ".carousel" ).mouseover(function() {
+$( ".blpage" ).mouseover(function() {
 for(let i2 = 0; i2 < 10; i2++) {
 if ($("#carousel-cell"+i2).hasClass("is-selected")) {
   // console.log('carousel-cell $i2 is selected');
   $('#board' + i2).fadeIn();
+  $('.caro-date' + i2).fadeIn();
 }else{
     $('#board'+i2).fadeOut();
+    $('.caro-date' + i2).fadeOut();
 }
 }
 

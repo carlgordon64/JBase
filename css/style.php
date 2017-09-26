@@ -215,6 +215,16 @@ for($o=0; $o<=10; $o++){
 $trackID = $o;
 echo "
 <style type='text/css'>
+.caro-date$trackID{
+    z-index:15;
+    position:absolute; bottom:10px; left:50%; margin-left:-40px;
+    width:80px; height:auto; text-align:center; max-height:80px;
+    background-color:$cs_hi;
+    border-top-right-radius: 4px; 
+border-top-left-radius: 4px;
+border-bottom-right-radius: 4px; 
+border-bottom-left-radius: 4px;padding:2px;
+}
 #board$trackID{
     display: visible;
     position:absolute;
@@ -229,9 +239,9 @@ echo "
     transition:0.4s ease all;
   width: 20%;
   height: 430px;
-  margin-right: 10px;
+  margin-right: 0px;
   background: rgba(0,0,0,0);
-  opacity: 0.5;
+  opacity: 0.2;
   border-bottom-right-radius: 8px; 
 border-bottom-left-radius: 8px;
 border-top-right-radius: 8px; 
@@ -241,7 +251,18 @@ border-top-left-radius: 8px;
 #carousel-cell$trackID.is-selected {
   opacity: 1;
 }
-
+.pointer{
+    width:2px;
+    background:#000;
+    height:12px;
+    position:absolute;
+    z-index:10;
+    top:80px;
+}
+#carousel-cell$trackID.is-selected .caro-title {
+     transition:0.4s ease all;
+     background:rgba(0,0,0,0);
+}
 /* cell number */
 #carousel-cell$trackID:before {
   display: block;
@@ -628,35 +649,24 @@ p{
 
 
 .caro-title{
+    transition:0.4s ease all;
     z-index:5;
 position:absolute; 
 bottom:0;
 width:100%; 
-border-top-right-radius: 8px; 
-border-top-left-radius: 8px;
 border-bottom-right-radius: 8px; 
 border-bottom-left-radius: 8px;
-color:$font_color;
-background:$cs_01; height:auto; text-align:center;
+border-top:4px solid rgba(0,0,0,0.8);
+color:#000;
+background:transparent; height:auto; text-align:center;
  padding-top:10px;
  padding-bottom:10px;
-// padding-left:15px;
-// padding-right:15px;
 font-family: 'Raleway', sans-serif;
 }
 .caro-title h2{
     font-size:24px;
 }
-.caro-date{
-    z-index:15;
-    position:absolute; bottom:10px; left:50%; margin-left:-40px;
-    width:80px; height:auto; text-align:center; max-height:80px;
-    background-color:rgba(0,0,0,0.1);
-    border-top-right-radius: 4px; 
-border-top-left-radius: 4px;
-border-bottom-right-radius: 4px; 
-border-bottom-left-radius: 4px;
-}
+
 .caro-content{
     z-index:16;
     position:absolute; top:50px; left:50%; margin-left:-200px;
@@ -665,10 +675,11 @@ border-bottom-left-radius: 4px;
 }
 #month{
     text-align:center;
-    color:#000;
+    color:#fff;
     font-family: 'Raleway', sans-serif;
-    margin-top:10px;
+    margin-top:3px;
     font-size:12px;
+    padding-bottom:5px;
 
 }
 #date{
@@ -677,6 +688,8 @@ border-bottom-left-radius: 4px;
     font-family: 'Raleway', sans-serif;
     margin-top:-20px;
     font-size:24px;
+    padding-bottom:12px;
+    background-color:#fff;
 
 }
 .ctpage{
