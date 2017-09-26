@@ -470,7 +470,10 @@ http://flickity.metafizzy.co
   right: auto;
   left: 10px;
 }
-
+@media screen and (min-width: 768px) {
+.flickity-prev-next-button.previous { left: 40%; top:340px; z-index:30; }
+.flickity-prev-next-button.next { right: 40%; top:340px; z-index:30; }
+  }
 .flickity-prev-next-button:disabled {
   opacity: 0.3;
   cursor: auto;

@@ -210,7 +210,51 @@ $color_iterate = ${'cs_0' . $ii};
 </style>
     ";
 }
+//CAROUSEL TRACK
+for($o=0; $o<=10; $o++){
+$trackID = $o;
+echo "
+<style type='text/css'>
+#board$trackID{
+    display: visible;
+    position:absolute;
+    width:600px;
+    left:50%;
+    margin-left:-300px;
+    height:370px;
+    background: #fff;
+    z-index:3;
+}
+#carousel-cell$trackID {
+    transition:0.4s ease all;
+  width: 20%;
+  height: 430px;
+  margin-right: 10px;
+  background: rgba(0,0,0,0);
+  opacity: 0.5;
+  border-bottom-right-radius: 8px; 
+border-bottom-left-radius: 8px;
+border-top-right-radius: 8px; 
+border-top-left-radius: 8px;
+}
 
+#carousel-cell$trackID.is-selected {
+  opacity: 1;
+}
+
+/* cell number */
+#carousel-cell$trackID:before {
+  display: block;
+  text-align: center;
+  content: none;
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+</style>
+";
+
+}
 echo"
 <style type='text/css'>
 
@@ -547,7 +591,7 @@ p{
     min-height:500px;
     padding-top:10px;
     height:$pageY;
-    background:$cs_03;
+    background:#fff;
 } 
 /* ---- page dots ---- */
 
@@ -582,66 +626,56 @@ p{
   background: transparent;
 }
 
-.carousel-cell {
-    transition:0.4s ease all;
-  width: 48%;
-  height: 460px;
-  margin-right: 10px;
-  background: #fff;
-  opacity: 0.5;
-  border-bottom-right-radius: 8px; 
-border-bottom-left-radius: 8px;
-border-top-right-radius: 8px; 
-border-top-left-radius: 8px;
-}
 
-.carousel-cell.is-selected {
-  opacity: 1;
-}
-
-/* cell number */
-.carousel-cell:before {
-  display: block;
-  text-align: center;
-  content: none;
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
-}
 .caro-title{
     z-index:5;
 position:absolute; 
 bottom:0;
 width:100%; 
+border-top-right-radius: 8px; 
+border-top-left-radius: 8px;
 border-bottom-right-radius: 8px; 
 border-bottom-left-radius: 8px;
 color:$font_color;
 background:$cs_01; height:auto; text-align:center;
- padding-top:50px;
+ padding-top:10px;
  padding-bottom:10px;
 // padding-left:15px;
 // padding-right:15px;
 font-family: 'Raleway', sans-serif;
 }
+.caro-title h2{
+    font-size:24px;
+}
 .caro-date{
     z-index:15;
-    position:absolute; bottom:70px; left:30px;
-    width:80px; height:80px;
-    background-color:red;
-    border-radius:100%;
+    position:absolute; bottom:10px; left:50%; margin-left:-40px;
+    width:80px; height:auto; text-align:center; max-height:80px;
+    background-color:rgba(0,0,0,0.1);
+    border-top-right-radius: 4px; 
+border-top-left-radius: 4px;
+border-bottom-right-radius: 4px; 
+border-bottom-left-radius: 4px;
+}
+.caro-content{
+    z-index:16;
+    position:absolute; top:50px; left:50%; margin-left:-200px;
+    width:400px; height:auto; text-align:center; max-height:200px;
+    background-color:rgba(0,0,0,0);
 }
 #month{
     text-align:center;
-    color:$font_color;
+    color:#000;
     font-family: 'Raleway', sans-serif;
-    margin-top:15px;
+    margin-top:10px;
+    font-size:12px;
 
 }
 #date{
     text-align:center;
-    color:$font_color;
+    color:#000;
     font-family: 'Raleway', sans-serif;
-    margin-top:-30px;
+    margin-top:-20px;
     font-size:24px;
 
 }

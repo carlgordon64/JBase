@@ -230,18 +230,23 @@ background:rgba(0,0,0,0.1);
 <!--START Blog PAGE CONTENT-->
 <div class="blpage">
 
-    <!-- Flickity HTML init -->
-<div class="carousel" data-flickity>
-  <div class="carousel-cell">
-    <div class="caro-date"><p id="month">Mar</p><p id="date">30</p></div>
-    <div class="caro-title"><h2>Project in Development</h2></div>
+<!-- <div class="spotlight" style="width:100%; height:350px; background:#fff; margin-bottom:10px;">
+    <div class="spot" style="width:80%;height:350px;background:rgba(0,0,0,0.2);margin:auto;">
+        <div class="well">
+<p id="more" class="" >Project 2</p>
+</div>
     </div>
-  <div class="carousel-cell"></div>
-  <div class="carousel-cell"></div>
-  <div class="carousel-cell"></div>
-  <div class="carousel-cell"></div>
-  <div class="carousel-cell"></div>
-  <div class="carousel-cell"></div>
+</div> -->
+    <!-- Flickity HTML init -->
+
+<div class="carousel" data-flickity>
+  <div id="carousel-cell0"><div class="caro-title"><h2>Project 2</h2></div><div id="board0"class=""><div class="caro-date"><p id="month">September</p><p id="date">27</p></div><p class="caro-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></div></div>
+  <div id="carousel-cell1"><div class="caro-title"><h2>Project 1</h2></div><div id="board1"class=""><div class="caro-date"><p id="month">September</p><p id="date">27</p></div><p class="caro-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></div></div>
+  <div id="carousel-cell2"><div class="caro-title"><h2>Project 2</h2></div><div id="board2"class=""><div class="caro-date"><p id="month">September</p><p id="date">27</p></div><p class="caro-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></div></div>
+  <div id="carousel-cell3"><div class="caro-title"><h2>Project 1</h2></div></div>
+  <div id="carousel-cell4"><div class="caro-title"><h2>Project 1</h2></div></div>
+  <div id="carousel-cell5"><div class="caro-title"><h2>Project 1</h2></div></div>
+  <div id="carousel-cell6"><div class="caro-title"><h2>Project 1</h2></div></div>
 </div>
 
 </div>
@@ -297,6 +302,13 @@ setTimeout(fadeIn, 500);
 
 $(document).ready(function()
 {
+    //carousel controls
+// next clicked
+$( ".blpage" ).mouseover(function() {
+if ($("#carousel-cell2").hasClass("is-selected")) {
+  console.log('carousel-cell x is selected');
+}
+});
     
     //SCRIPT to add flex-first to col-sm-4 if window width < 760px
   if ($(window).width() < 760) {
@@ -425,6 +437,7 @@ $('#btn4b').click(function () {
         scrollTop: $(".ctpage").offset().top- $navHeight
     }, 1000);
     });
+
 
 window.onscroll = function() {myFunction()};
 
