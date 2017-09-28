@@ -232,7 +232,7 @@ border-bottom-left-radius: 4px;padding:2px;
     left:50%;
     margin-left:-300px;
     height:370px;
-    background: #fff;
+    background: transparent;
     z-index:3;
 }
 #carousel-cell$trackID {

@@ -55,16 +55,31 @@ $('.button-group').each( function( i, buttonGroup ) {
 });
 
     //carousel controls
-// next clicked
-$( ".blpage" ).mouseover(function() {
+    //on blog section hover -> fade out non-selected boards 
+   
+    $(document).on('mouseover', '.blpage, .flickity-prev-next-button', function () {
 for(let i2 = 0; i2 < 10; i2++) {
 if ($("#carousel-cell"+i2).hasClass("is-selected")) {
-  // console.log('carousel-cell $i2 is selected');
+   console.log(i2);
   $('#board' + i2).fadeIn();
-  $('.caro-date' + i2).fadeIn();
+  $('.caro-date' + i2).slideDown(300);
 }else{
     $('#board'+i2).fadeOut();
-    $('.caro-date' + i2).fadeOut();
+  $('.caro-date' + i2).slideUp(600);
+}
+}
+});
+// next clicked
+//on next/prev click or dot click -> fade out non-selected boards
+$(document).on('click', '.flickity-prev-next-button, .dot', function () {
+for(let i2 = 0; i2 < 10; i2++) {
+if ($("#carousel-cell"+i2).hasClass("is-selected")) {
+   console.log('carousel-cell $i2 is selected');
+  $('#board' + i2).fadeIn();
+  $('.caro-date' + i2).slideDown(300);
+}else{
+    $('#board'+i2).fadeOut();
+    $('.caro-date' + i2).slideUp(600);
 }
 }
 
