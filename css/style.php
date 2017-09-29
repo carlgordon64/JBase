@@ -493,6 +493,15 @@ overflow:hidden;
 // opacity:0.6;
 // left:20px;
 // }
+.dpop{
+    margin:auto;
+    position:absolute;
+    text-align:center;
+    top:65px;
+    color:#fff;
+    z-index:20;
+    font-size:15px;
+}
 .skills{
     width:100%;
     height:400px;
@@ -502,6 +511,35 @@ overflow:hidden;
      -moz-box-shadow:    inset 0 8px 20px rgba(0,0,0,0.1);
    -webkit-box-shadow: inset 0 8px 20px rgba(0,0,0,0.1);
    box-shadow:         inset 0 8px 20px rgba(0,0,0,0.1);
+   border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+}
+.skills :hover{
+cursor:pointer;
+    }
+    .skillsover1 :hover{
+cursor:pointer;
+    }
+.skillsover1{
+    position:relative;
+    top:-400px;
+    width:100%;
+    height:400px;
+    background:rgba(10,10,10,1);
+    z-index:20;
+}
+    .skillsover2 :hover{
+cursor:pointer;
+    }
+.skillsover2{
+    position:relative;
+    top:-400px;
+    width:100%;
+    height:400px;
+    background:rgba(10,10,10,1);
+    z-index:20;
 }
 .skills li{
     color:white;

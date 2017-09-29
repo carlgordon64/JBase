@@ -4,9 +4,8 @@ echo "
 <div class='row' style='background:rgba(255,255,255,0); text-align:center;'>
 <div class='col-md-4 cvleft' style='height:auto;'>
 <div class='well'>
-    <p style=' font-size:32px; '>Development</p>
-    <div class='smallbreaker'></div>
-    <div class='skills' id='corners'>
+    <p style=' font-size:26px;padding-top:15px; '>Development</p>
+    <div class='skills' id='skillpop1'>
         <div id='scroller' >
         <ul>   
         <li>Php<span class='rating' style='background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span><span class='r4'></span><span class='r5'></span></span></li>
@@ -17,7 +16,19 @@ echo "
         <li>CSS<span class='rating' style=' background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span><span class='r4'></span><span class='r5'></span></span></span></li>  
         </ul>
         </div>
+         <div class='skillsover1 '>
+         <div id='scroller'>
+      <ul>   
+      <li>UI Design<span class='rating' style='background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span><span class='r4'></span><span class='r5'></span></span></li>
+       <li>UX Design<span class='rating' style=' background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span><span class='r4'></span></span></span></li>
+       <li>Graphic Design<span class='rating' style=' background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span></span></span></li>
+       <li>Audition<span class='rating' style=' background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span><span class='r4'></span><span class='r5'></span></span></span></li>
+        <li>Premiere<span class='rating' style=' background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span><span class='r4'></span><span class='r5'></span></span></span></li>
+        </ul>
+        </div>
+        </div>
 </div>
+
     </div>
 </div>
 <div class='mid col-md-4 cvmid' style=' height:500px;'>
@@ -38,9 +49,8 @@ echo "
 </div>
 <div class='col-md-4 cvright' style=' height:500px;'>
 <div class='well'>
-    <p style=' font-size:32px;'>Design</p>
-    <div class='smallbreaker'></div>
-    <div class='skills' id='corners'>
+    <p style=' font-size:26px;padding-top:15px;'>Design</p>
+    <div class='skills' id='skillpop2'>
         <div id='scroller'>
       <ul>   
       <li>PhotoShop<span class='rating' style='background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span><span class='r4'></span><span class='r5'></span></span></li>
@@ -51,7 +61,19 @@ echo "
         
       </ul>
         </div>
+        <div class='skillsover2 '>
+         <div id='scroller'>
+      <ul>   
+      <li>UI Design<span class='rating' style='background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span><span class='r4'></span><span class='r5'></span></span></li>
+       <li>UX Design<span class='rating' style=' background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span></span></span></li>
+       <li>Graphic Design<span class='rating' style=' background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span></span></span></li>
+       <li>Audition<span class='rating' style=' background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span></span></span></li>
+        <li>Premiere<span class='rating' style=' background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span><span class='r4'></span><span class='r5'></span></span></span></li>
+        </ul>
         </div>
+        </div>
+        </div>
+
     </div>
 </div>
 </div>

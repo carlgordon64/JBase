@@ -189,7 +189,7 @@ background:rgba(0,0,0,0.1);
     <!--page logo-->
 <div id="logo">
 <form action="index.php" method="post">
-<input class="logobtn" style="background-image:url('img/site_logo_2.png'); background-repeat:no-repeat; background-position:50%; background-size:100% auto;" type="submit" name="add" value="" />
+<input class="logobtn" style="background-image:url('img/site_logo_3.png'); background-repeat:no-repeat; background-position:50%; background-size:100% auto;" type="submit" name="add" value="" />
 </form>
 </div>
 
@@ -302,7 +302,8 @@ setTimeout(fadeIn, 500);
 
 $(document).ready(function()
 {
-
+$('.skillsover1').slideToggle(1);
+$('.skillsover2').slideToggle(1);
     
     //SCRIPT to add flex-first to col-sm-4 if window width < 760px
   if ($(window).width() < 760) {
@@ -432,6 +433,15 @@ $('#btn4b').click(function () {
     }, 1000);
     });
 
+//skills pop
+$('#skillpop1').click(function () {
+    var $this = $('.dpop');
+    $('.skillsover1').slideToggle(600);
+    });
+$('#skillpop2').click(function () {
+    $('.skillsover2').slideToggle(600);
+    });
+
 
 window.onscroll = function() {myFunction()};
 
@@ -487,7 +497,7 @@ $('.scrolltop').addClass('active')
     }
     //change text on scroll to blog
     if (document.documentElement.scrollTop > blogsec & document.documentElement.scrollTop < contactsec) {
-$(".altnav").html("<p class='sec-text'>Blog!<p>");
+$(".altnav").html("<p class='sec-text'>DevBlog<p>");
 $('.navicon03').css('border', '2px solid <? echo $color_hi ?>');
     }else{
 $('.navicon03').css('border', '2px solid white');
