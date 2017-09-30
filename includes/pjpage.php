@@ -19,7 +19,7 @@ echo "
 
  </div>
   <div class='element-panel-bottom'>
-  <span class='viewpj'><a href='#'><div style='position:absolute;margin-top:5px; left:50%; margin-left:-15px;'><img alt='Projects' id='cv-icon' class='svg  ' src='svg/private-eye.svg'/></div></a></span>
+  <a href='#'><span class='viewpj'><div class='eyeball'><img alt='Projects' id='eye-icon' class='svg' src='svg/private-eye.svg'/></div></a></span>
 
 <p class='element-text'>Project One was a project built with tools, made to solve a specific problem.</p>
  

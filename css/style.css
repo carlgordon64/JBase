@@ -127,15 +127,15 @@ body {
 
 /* ---- .element-item ---- */
 .element-title{
+  font-family: 'Raleway', sans-serif;
   position: relative;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
   margin: auto;
    top: 80px;
     padding-left: 0px;
   padding-right: 0px;
-
   font-size: 26px;
-  font-weight: bold;
+  font-weight: 200;
   color: white;
   text-align: center;
 }
@@ -152,7 +152,7 @@ padding-left: 20px;
 
 .element-text{
   text-align:center;
-  margin-top:20px;
+  margin-top:10px;
   padding-left:16px;
    padding-right:16px;
    font-size:15px;
@@ -166,7 +166,7 @@ padding-left: 20px;
   width: 280px;
   height: 140px;
   padding: 0px;
-  background: rgba(0,0,0,0.05);
+  background: rgba(0,0,200,0.6);
   color: #fff;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
   cursor:pointer;
@@ -176,12 +176,20 @@ padding-left: 20px;
   top:0px;
 }
 .viewpj{
+  transition:0.4s ease all;
   position: absolute;
   opacity: 0.4;
   width: 100%;
- background: rgba(0,0,150,0.5);
+ background: rgba(0,0,0,0.7);
   height: 100px;
   margin-top:100px;
+}
+.eyeball{
+  position:absolute;margin-top:3px; left:50%; margin-left:-15px;
+}
+ .viewpj:hover{
+  transition:0.4s ease all;
+ background: rgba(0,0,150,0.8);
 }
 .element-panel-bottom {
   transition:0.4s ease all;
@@ -192,7 +200,7 @@ padding-left: 20px;
   width: 280px;
   height: 140px;
   padding: 0px;
-  background: rgba(0,0,150,0.5);
+  background: rgba(0,0,0,0.8);
   color: #fff;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
   cursor:pointer;
@@ -224,6 +232,7 @@ padding-left: 20px;
 .element-item {
   position: relative;
   overflow: hidden;
+  border:2px solid transparent;
   float: left;
   width: 280px;
   height: 280px;
@@ -238,6 +247,13 @@ cursor:pointer;
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;*/
+}
+#eye-icon{
+  z-index: 30;
+}
+.element-item:hover #eye-icon{
+    transition:0.4s ease all;
+    fill: yellow;
 }
 
 .element-item:hover{
