@@ -127,13 +127,35 @@ body {
 
 /* ---- .element-item ---- */
 .element-title{
-  position: absolute;
+  position: relative;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
-  left: 50px;
-  top: -10px;
-  font-size: 32px;
+  margin: auto;
+   top: 80px;
+    padding-left: 0px;
+  padding-right: 0px;
+
+  font-size: 26px;
   font-weight: bold;
   color: white;
+  text-align: center;
+}
+.big{
+    top: 60px;
+padding-left: 20px;
+  padding-right: 20px;
+}
+.small{
+  top: 100px;
+    padding-left: 0px;
+  padding-right: 0px;
+}
+
+.element-text{
+  text-align:center;
+  margin-top:20px;
+  padding-left:16px;
+   padding-right:16px;
+   font-size:15px;
 }
 .element-panel-top {
   transition:0.4s ease all;
@@ -144,7 +166,7 @@ body {
   width: 280px;
   height: 140px;
   padding: 0px;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.05);
   color: #fff;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
   cursor:pointer;
@@ -152,6 +174,14 @@ body {
 .slidedown{
   transition:0.4s ease all;
   top:0px;
+}
+.viewpj{
+  position: absolute;
+  opacity: 0.4;
+  width: 100%;
+ background: rgba(0,0,150,0.5);
+  height: 100px;
+  margin-top:100px;
 }
 .element-panel-bottom {
   transition:0.4s ease all;
@@ -162,7 +192,7 @@ body {
   width: 280px;
   height: 140px;
   padding: 0px;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,150,0.5);
   color: #fff;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
   cursor:pointer;
