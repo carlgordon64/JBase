@@ -135,7 +135,7 @@ background:rgba(0,0,0,0.1);
 
 }
 </style>
-<nav style="background:<? echo $color_00 ?>; position:fixed; z-index:12;width:100%;"class="dead navbar navbar-default fixed-top">
+<nav style="background:<? echo $color_00 ?>; position:fixed; z-index:32;width:100%;"class="dead navbar navbar-default fixed-top">
   <p id="homebtn" style="position:fixed; margin-top:18px; margin-left:10px;">HOME</p>
   <div class="row" >
   <div style="width:330px;  height:2px; position:fixed; background:#000; margin-top:30px; left:50%; margin-left:-165px;"></div>

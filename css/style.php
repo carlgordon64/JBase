@@ -272,6 +272,24 @@ border-top-left-radius: 8px;
   font-size: 80px;
   color: white;
 }
+/*Media @ 480px or smaller*/
+@media screen and (max-width: 480px) {
+    #carousel-cell$trackID {
+width:80%;
+}
+#board$trackID{
+    display: visible;
+    position:absolute;
+    width:360px;
+    left:50%;
+    margin-left:-180px;
+    height:370px;
+    background: transparent;
+    z-index:3;
+}
+
+
+    }
 </style>
 ";
 
@@ -791,6 +809,12 @@ cursor:text;
 }
     .carousel-cell {
   width: 95%;
+}
+.caro-content{
+    z-index:16;
+    position:absolute; top:50px; left:50%; margin-left:-150px;
+    width:300px; height:auto; text-align:center; max-height:200px;
+    background-color:rgba(0,0,0,0);
 }
  .pagination{
     transition:0.4s ease all;

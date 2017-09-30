@@ -473,6 +473,10 @@ http://flickity.metafizzy.co
 .flickity-prev-next-button.previous { left: 40%; top:330px; z-index:30; }
 .flickity-prev-next-button.next { right: 40%; top:330px; z-index:30; }
   }
+  @media screen and (max-width: 480px) {
+.flickity-prev-next-button.previous { left: 50px; top:330px; z-index:30; }
+.flickity-prev-next-button.next { right: 50px; top:330px; z-index:30; }
+  }
 .flickity-prev-next-button:disabled {
   transition:0.4s ease all;
   opacity: 0;
