@@ -41,7 +41,7 @@ echo "
     <div class='breaker'></div>
 </div>
 <div class='well' style='padding:20px; '>
-    <p>Aficionado of Technology and Art with a Bachelor of Design Innovation, working as a Web Developer in Wellington, New Zealand.</p>
+    <p style='font-size:15px;'>Aficionado of Technology and Art with a Bachelor of Design Innovation, working as a Web Developer in Wellington, New Zealand.</p>
 </div>
 <div class='well'>
 <p id='more' class='dead active' >Read More</p>
@@ -91,7 +91,7 @@ echo "
     </div>
     <div class='mid col-md-4 cvmid2' style='height:auto;'>
 <div class='well' style='padding:20px; '>
-    <p>In my spare time you can catch me snowboarding at Mt. Ruapehu or tinkering in the workshop..</p>
+    <p style='font-size:15px;'>In my spare time you can catch me snowboarding at Mt. Ruapehu or tinkering in the workshop..</p>
 </div>
     </div>
     <div class='col-md-4 cvright' style='height:auto;'>

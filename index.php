@@ -189,7 +189,7 @@ background:rgba(0,0,0,0.1);
     <!--page logo-->
 <div id="logo">
 <form action="index.php" method="post">
-<input class="logobtn" style="background-image:url('img/site_logo_3.png'); background-repeat:no-repeat; background-position:50%; background-size:100% auto;" type="submit" name="add" value="" />
+<input class="logobtn" style="background-image:url('img/site_logo_4.png'); background-repeat:no-repeat; background-position:50%; background-size:100% auto;" type="submit" name="add" value="" />
 </form>
 </div>
 
@@ -367,7 +367,9 @@ $('.scrolltop').click(function () {
 $('.element-item').click(function () {
     // $('.element-panel').toggleClass('active')
     $('.element-panel-top').toggleClass('slidedown')
-    $('.element-panel-bottom').toggleClass('slideup')
+      $('.element-panel-bottom').toggleClass('slideupslow')
+      $('.element-item').toggleClass('toggleborder')
+      // $('.element-item').toggleClass('blurme')
 //$('.element-panel').toggle();
     });
  //scroll to top page on homebtn click

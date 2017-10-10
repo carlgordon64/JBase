@@ -27,6 +27,7 @@ switch ($colorscheme) {
     $font_color="#000";
     $font_color2="#fff";
     $cs_hi = "#A3D0C1";
+    $cs_tint = "#A3D0C1";
     $schematic = "mellow";
         break;
     case 2:
@@ -38,6 +39,7 @@ switch ($colorscheme) {
     $font_color="#1b1f20";
     $font_color2="#1b1f20";
     $cs_hi = "#1b1f20";
+    $cs_tint = "#1b1f20";
     $schematic = "arctic";
         break;
     case 3:
@@ -49,6 +51,7 @@ switch ($colorscheme) {
     $font_color="#fff";
     $font_color2="#fff";
     $cs_hi = "#FD775A";
+    $cs_tint = "#FD775A";
     $schematic = "vintage";
     break;
     case 4:
@@ -60,6 +63,7 @@ switch ($colorscheme) {
     $font_color="#fff";
     $font_color2="#000";
     $cs_hi = "#F0CA4D";
+    $cs_tint = "#F0CA4D";
     $schematic = "pineapple";
     break;
      case 5:
@@ -71,6 +75,7 @@ switch ($colorscheme) {
     $font_color="#000";
     $font_color2="#000";
     $cs_hi = "#0b2b35";
+    $cs_tint = "#0b2b35";
     $schematic = "blanca";
     break;
     case 6:
@@ -82,6 +87,7 @@ switch ($colorscheme) {
     $font_color="#fff";
     $font_color2="#fff";
     $cs_hi = "#E74C3C";
+    $cs_tint = "#E74C3C";
     $schematic = "honeypot";
     break;
      case 7:
@@ -93,6 +99,7 @@ switch ($colorscheme) {
     $font_color="#000";
     $font_color2="#000";
     $cs_hi = "#FF3D2E";
+    $cs_tint = "#FF3D2E";
     $schematic = "futurama";
     break;
       case 8:
@@ -104,6 +111,7 @@ switch ($colorscheme) {
     $font_color="#000";
     $font_color2="#000";
     $cs_hi = "#2D5B5E";
+    $cs_tint = "#2D5B5E";
     $schematic = "candyland";
     break;
      case 9:
@@ -115,6 +123,7 @@ switch ($colorscheme) {
     $font_color="#fff";
     $font_color2="#fff";
     $cs_hi = "#FF9326";
+    $cs_tint = "#FF9326";
     $schematic = "lemons";
     break;
     default:
@@ -126,6 +135,7 @@ switch ($colorscheme) {
     $font_color="#fff";
     $font_color2="#fff";
     $cs_hi = "#5ED1E3";
+    $cs_tint = "#5ED1E3";
     $schematic = "nova";
 }
 
@@ -299,6 +309,10 @@ echo"
 
 body{
     background:$cs_00;
+}
+.windowtint{
+    width:100%; height:280px;  background:$cs_tint; opacity:0.5; margin:auto; position:absolute; top:0px;
+
 }
 .pagination{
     transition:0.4s ease all;
