@@ -19,8 +19,8 @@ $colorscheme = $_SESSION["colorset"];
 //color scheme swicth
 switch ($colorscheme) {
     case 1:
-    $cs_00="#A3D0C1";
-    $cs_01="#e0e0e0";
+    $cs_00="#F2F2F2";
+    $cs_01="#F2F2F2";
     $cs_02="#2F343B";
     $cs_03="#405F59";
     $cs_04="#A3D0C1";
@@ -31,16 +31,16 @@ switch ($colorscheme) {
     $schematic = "mellow";
         break;
     case 2:
-    $cs_00="#DBEFE7";
-    $cs_01="#B2C8C6";
-    $cs_02="#F2F3F2";
-    $cs_03="#A69B8C";
-    $cs_04="#D6CCBC";
-    $font_color="#1b1f20";
-    $font_color2="#1b1f20";
-    $cs_hi = "#1b1f20";
-    $cs_tint = "#1b1f20";
-    $schematic = "arctic";
+    $cs_00="#242C38";
+    $cs_01="#454C57";
+    $cs_02="#242C38";
+    $cs_03="#FF625F";
+    $cs_04="#FF625F";
+    $font_color="#fff";
+    $font_color2="#fff";
+    $cs_hi = "#5ED1E3";
+    $cs_tint = "#5ED1E3";
+    $schematic = "nova";
         break;
     case 3:
     $cs_00="#1b1f20";
@@ -87,7 +87,7 @@ switch ($colorscheme) {
     $font_color="#fff";
     $font_color2="#fff";
     $cs_hi = "#E74C3C";
-    $cs_tint = "#E74C3C";
+    $cs_tint = "#ffffff";
     $schematic = "honeypot";
     break;
      case 7:
@@ -127,16 +127,16 @@ switch ($colorscheme) {
     $schematic = "lemons";
     break;
     default:
-    $cs_00="#242C38";
-    $cs_01="#454C57";
-    $cs_02="#242C38";
-    $cs_03="#FF625F";
-    $cs_04="#FF625F";
-    $font_color="#fff";
-    $font_color2="#fff";
-    $cs_hi = "#5ED1E3";
-    $cs_tint = "#5ED1E3";
-    $schematic = "nova";
+    $cs_00="#DBEFE7";
+    $cs_01="#B2C8C6";
+    $cs_02="#F2F3F2";
+    $cs_03="#A69B8C";
+    $cs_04="#D6CCBC";
+    $font_color="#1b1f20";
+    $font_color2="#1b1f20";
+    $cs_hi = "#4CC1BB";
+    $cs_tint = "#DBEFE7";
+    $schematic = "arctic";
 }
 
 $_SESSION["color_hi"] = $cs_hi;
@@ -311,7 +311,7 @@ body{
     background:$cs_00;
 }
 .windowtint{
-    width:100%; height:280px;  background:$cs_tint; opacity:0.5; margin:auto; position:absolute; top:0px;
+    width:100%; height:280px;  background:$cs_tint; opacity:0.3; margin:auto; position:absolute; top:0px;
 
 }
 .pagination{
@@ -535,8 +535,9 @@ overflow:hidden;
     font-size:15px;
 }
 .skills{
-    width:100%;
-    height:400px;
+    width:90%;
+    margin:auto;
+    height:394px;
     overflow:hidden;
     /* bg originally $cs_02 */
     background:rgba(0,0,0,0.05);
@@ -556,9 +557,9 @@ cursor:pointer;
     }
 .skillsover1{
     position:relative;
-    top:-400px;
+    top:-394px;
     width:100%;
-    height:400px;
+    height:394px;
     background:rgba(10,10,10,1);
     z-index:20;
 }
@@ -567,9 +568,9 @@ cursor:pointer;
     }
 .skillsover2{
     position:relative;
-    top:-400px;
+    top:-394px;
     width:100%;
-    height:400px;
+    height:394px;
     background:rgba(10,10,10,1);
     z-index:20;
 }
@@ -628,12 +629,22 @@ cursor:pointer;
 .fc1{
     color:$font_color;
 }
+#subhead{
+    font-size:24px;
+}
 .well p{
     color:$font_color;
+    font-family: 'Lato', sans-serif;
+  font-weight: 300;
 }
 .well li{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size:16px;
     color:$font_color2;
+}
+#rale{
+    font-family: 'Raleway', sans-serif;
 }
 
 .altbod{
@@ -679,6 +690,7 @@ p{
 } 
 .blpage{
     width:100%;
+
     min-height:500px;
     padding-top:10px;
     height:$pageY;

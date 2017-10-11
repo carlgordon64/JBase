@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html style="overflow-x:hidden;">
 <head>
+    <title>C G Media</title>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,800italic,400,700,800' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Raleway:400,700,300,200,100,900' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+   <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet"> 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -189,7 +191,7 @@ background:rgba(0,0,0,0.1);
     <!--page logo-->
 <div id="logo">
 <form action="index.php" method="post">
-<input class="logobtn" style="background-image:url('img/site_logo_4.png'); background-repeat:no-repeat; background-position:50%; background-size:100% auto;" type="submit" name="add" value="" />
+<input class="logobtn" style="background-image:url('img/site_logo_5.png'); background-repeat:no-repeat; background-position:50%; background-size:100% auto;" type="submit" name="add" value="" />
 </form>
 </div>
 

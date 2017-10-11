@@ -1,8 +1,13 @@
 <?php
 echo "
 <style type='text/css'>
-.element-item{
-
+.website{
+background-image:url('img/dslimg.jpg');
+}
+.tech{
+background-image:url('img/laptopbox.jpg');
+}
+.Media{
 background-image:url('img/media.jpg');
 }
 </style>
@@ -10,10 +15,10 @@ background-image:url('img/media.jpg');
 <button id='plusbutton' class='readmore'><p id='pTest'>+</p></button>
     <!--Project filter buttons-->
 <div style=' text-align:center; width:100%;'><div id='filters' style='margin-top:-20px;'>  
-<button class='button allbtn' data-filter='*'>show all</button>
-  <button class='button webbtn' data-filter='.website'>web</button>
-  <button class='button techbtn' data-filter='.tech'>tech</button>
-  <button class='button mediabtn' data-filter='.Media'>media</button>
+<button class='button allbtn' data-filter='*'>Show All</button>
+  <button class='button webbtn' data-filter='.website'>Web</button>
+  <button class='button techbtn' data-filter='.tech'>Tech</button>
+  <button class='button mediabtn' data-filter='.Media'>Media</button>
 </div></div>
   <!--loop project tiles-->
 <div class='grid' style='max-width:1080px; margin:auto;'>
@@ -21,7 +26,7 @@ background-image:url('img/media.jpg');
   <div class='element-item website' data-category='tech'>
   <div class='windowtint'></div>
   <div class='element-panel-top'>
-  <p class='element-title big'>Project one website</p>
+  <p class='element-title small'>DSL Website</p>
  </div>
   <div class='element-panel-bottom'>
   <a href='#'><span class='viewpj'><div class='eyeball'><img alt='Projects' id='eye-icon' class='svg' src='svg/private-eye.svg'/></div></a></span>
@@ -33,7 +38,7 @@ background-image:url('img/media.jpg');
   <div class='element-item tech' data-category='tech'>
   <div class='windowtint'></div>
   <div class='element-panel-top'>
-  <p class='element-title small'>Project one tech</p>
+  <p class='element-title small'>Laptop Control Box</p>
  </div>
   <div class='element-panel-bottom'>
   <a href='#'><span class='viewpj'><div class='eyeball'><img alt='Projects' id='eye-icon' class='svg' src='svg/private-eye.svg'/></div></a></span>
@@ -45,7 +50,7 @@ background-image:url('img/media.jpg');
   <div class='element-item Media' data-category='media'>
   <div class='windowtint'></div>
   <div class='element-panel-top'>
-  <p class='element-title small'>Project one media</p>
+  <p class='element-title small'>Lucid Dream</p>
  </div>
   <div class='element-panel-bottom'>
   <a href='#'><span class='viewpj'><div class='eyeball'><img alt='Projects' id='eye-icon' class='svg' src='svg/private-eye.svg'/></div></a></span>
