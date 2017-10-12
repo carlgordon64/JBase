@@ -126,9 +126,29 @@ body {
   clear: both;
 }
 
+.category-label{
+  width:70px;
+  height:20px;
+  background-color:green;
+  position:absolute;
+  left:140px;
+  margin-left:-35px;
+  margin-top:-10px;
+  z-index:12;
 
+  border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.category-label p{
+font-size:12px;
+color:#000;
+text-align: center;
+  }
 .element-title{
-  font-family: 'Lato', sans-serif;
+  /*font-family: 'Lato', sans-serif;*/
+  font-family: 'Megrim', cursive;
   font-weight: 300;
   position: relative;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.1);
@@ -163,9 +183,8 @@ padding-left: 20px;
 .viewpj{
   transition:0.4s ease all;
   position: absolute;
-  opacity: 0.4;
   width: 100%;
- background: rgba(0,0,0,0.7);
+ background: rgba(0,0,0,0.15);
   height: 100px;
   margin-top:100px;
 }
@@ -174,7 +193,7 @@ padding-left: 20px;
 }
  .viewpj:hover{
   transition:0.4s ease all;
- background: rgba(0,0,150,0.8);
+ background: rgba(0,0,0,0.8);
 }
 .tech .element-panel-top {
   background: rgba(255,255,255,0.6);
@@ -207,14 +226,14 @@ padding-left: 20px;
   float: left;
   top:140px;
   width: 280px;
-  height: 150px;
+  height: 140px;
   padding: 0px;
   background: rgba(255,255,255,0.95);
   color: #000;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
   cursor:pointer;
   overflow: hidden;
-  z-index: 12;
+  z-index: 20;
 }
 .slideup{
   transition:0.5s ease all;
@@ -285,10 +304,7 @@ z-index:10;
 #eye-icon{
   z-index: 30;
 }
-.element-item:hover #eye-icon{
-    transition:0.4s ease all;
-    fill: yellow;
-}
+
 
 .element-item:hover{
     transition:0.4s ease all;

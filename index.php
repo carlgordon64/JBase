@@ -7,7 +7,7 @@
 <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet"> 
-
+<link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
@@ -132,8 +132,22 @@ background:rgba(0,0,0,0.1);
 }
 /*  Flickety css */
 * { box-sizing: border-box; }
-
-
+/* carlgordonmedia text style */
+.welcometitle p{
+    font-family: 'Megrim', cursive;
+    text-align: center;
+    font-size:25px;
+    color:#fff;
+    text-shadow: 2px 3px 2px rgba(0,0,0,0.2);
+}
+.welcometitle{
+    height:auto;
+    width:100%;
+    margin:auto;
+}
+#sec1{color:#fff;}
+#sec2{color:#977EDB;}
+#sec3{color:#46C6B8;}
 
 }
 </style>
@@ -194,6 +208,7 @@ background:rgba(0,0,0,0.1);
 <input class="logobtn" style="background-image:url('img/site_logo_5.png'); background-repeat:no-repeat; background-position:50%; background-size:100% auto;" type="submit" name="add" value="" />
 </form>
 </div>
+<div class="welcometitle"><p><span id="sec1">carl</span><span id="sec2">gordon</span><span id="sec3">media</span></p></div>
 
 <!--pagination buttons-->
     <div class="row dead responder" id="mydiv">

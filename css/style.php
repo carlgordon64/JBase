@@ -34,12 +34,12 @@ switch ($colorscheme) {
     $cs_00="#242C38";
     $cs_01="#454C57";
     $cs_02="#242C38";
-    $cs_03="#FF625F";
-    $cs_04="#FF625F";
+    $cs_03="#977EDB";
+    $cs_04="#46C6B8";
     $font_color="#fff";
     $font_color2="#fff";
-    $cs_hi = "#5ED1E3";
-    $cs_tint = "#5ED1E3";
+    $cs_hi = "#46C6B8";
+    $cs_tint = "#ffffff";
     $schematic = "nova";
         break;
     case 3:
@@ -128,7 +128,7 @@ switch ($colorscheme) {
     break;
     default:
     $cs_00="#DBEFE7";
-    $cs_01="#B2C8C6";
+    $cs_01="#C1D4D2";
     $cs_02="#F2F3F2";
     $cs_03="#A69B8C";
     $cs_04="#D6CCBC";
@@ -309,6 +309,10 @@ echo"
 
 body{
     background:$cs_00;
+}
+.element-item:hover #eye-icon{
+    transition:0.4s ease all;
+    fill: $cs_hi;
 }
 .windowtint{
     width:100%; height:280px;  background:$cs_tint; opacity:0.3; margin:auto; position:absolute; top:0px;

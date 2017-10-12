@@ -53,6 +53,7 @@ background-image:url('img/media.jpg');
   <p class='element-title small'>Lucid Dream</p>
  </div>
   <div class='element-panel-bottom'>
+  <div class='category-label'><p>media</p></div>
   <a href='#'><span class='viewpj'><div class='eyeball'><img alt='Projects' id='eye-icon' class='svg' src='svg/private-eye.svg'/></div></a></span>
   <p class='element-text'>Project One was a project built with tools, made to solve a specific problem.</p>
   </div>
