@@ -8,6 +8,9 @@
    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet"> 
+
+<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400|Lobster|Nova+Flat" rel="stylesheet"> 
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
@@ -134,7 +137,7 @@ background:rgba(0,0,0,0.1);
 * { box-sizing: border-box; }
 /* carlgordonmedia text style */
 .welcometitle p{
-    font-family: 'Megrim', cursive;
+   font-family: 'Comfortaa', cursive;
     text-align: center;
     font-size:25px;
     color:#fff;
@@ -146,8 +149,8 @@ background:rgba(0,0,0,0.1);
     margin:auto;
 }
 #sec1{color:#fff;}
-#sec2{color:#977EDB;}
-#sec3{color:#46C6B8;}
+#sec3{color:#977EDB;}
+#sec2{color:#46C6B8;}
 
 }
 </style>
@@ -378,9 +381,14 @@ $('.scrolltop').click(function () {
     }, 1000);
     });
 
-
 //PAGE HANDLERS
  //element-panel on element-item click
+ $('.element-item').mouseover(function () {
+$('.category-label').addClass('pull-up');
+ });
+  $('.element-item').mouseout(function () {
+$('.category-label').removeClass('pull-up');
+ });
 $('.element-item').click(function () {
     // $('.element-panel').toggleClass('active')
     $('.element-panel-top').toggleClass('slidedown')
