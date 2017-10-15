@@ -139,7 +139,7 @@ background:rgba(0,0,0,0.1);
 .welcometitle p{
    font-family: 'Comfortaa', cursive;
     text-align: center;
-    font-size:25px;
+    font-size:22px;
     color:#fff;
     text-shadow: 2px 3px 2px rgba(0,0,0,0.2);
 }
@@ -162,7 +162,7 @@ background:rgba(0,0,0,0.1);
 <!-- margin left - (col-xs-3 padding + pagination width)/2 -->
 <div class="row"style="width:360px; position:relative; z-index:15; left:50%; margin-left:-160px;">
     <div class="col-xs-3"  >
-        <div id="btn1b" class="pagination navicon01"><img alt="C.V" id="cv-icon" class="svg" src="svg/avatar-male.svg"/></div>
+        <div id="btn1b" class="pagination navicon01"><img alt="C.V" id="cv-icon" class="svg" style="height:50px;" src="svg/me-icon.svg"/></div>
     </div>
     <div class="col-xs-3">
         <div id="btn2b" class="pagination navicon02"><img alt="Projects" id="cv-icon" class="svg" src="svg/circle-menu.svg"/></div>
@@ -216,7 +216,7 @@ background:rgba(0,0,0,0.1);
 <!--pagination buttons-->
     <div class="row dead responder" id="mydiv">
     <div class="col-sm-3"  >
-        <div id="btn1" class="pagination"><img alt="C.V" id="cv-icon" class="svg  " src="svg/avatar-male.svg"/></div>
+        <div id="btn1" class="pagination"><img alt="C.V" id="cv-icon" class="svg  " src="svg/me-icon.svg"/></div>
     <div class="A01 lasso0"><div class="01 lassoHead0"></div></div>
     </div>
     <div class="col-sm-3">
@@ -274,38 +274,46 @@ background:rgba(0,0,0,0.1);
 
 <!--START Contact PAGE CONTENT-->
 <div class="ctpage">
+
 <div class='row' style='background:rgba(255,255,255,0); text-align:center; max-width:1280px; margin:auto;'>
 
 <div class="contact-footer">
-<div class='well'>
-<p style=' font-size:32px;'>Leave me a message</p>
-</div>
+<div class="cttint" >
+<p class="fc4 lift" style='font-size:32px;'>Leave me a message</p>
+<div id="cttexture"></div>
 
 <!-- Send message input -->
-<div style="width:90%; margin:auto; height:auto;">
+
+<div style="width:50%; margin:auto;">
+
+<div class="chatpop">
 <form action="#">
-<input class="chatmsg"type="text" placeholder="Type a message" name="chat"/>
-<input class="chatsub" type="submit" name="submit" value=">" id="submit" />
+<input class="chatname"type="text" placeholder="Name" name="chat"/>
+<input class="chataddress"type="email" placeholder="Email" name="chat"/>
+</form>
+<form action="#">
+<input class="chatsub" type="submit" name="submit" value="" id="submit" />
+<input class="chatsubject"type="text" placeholder="Subject" name="chat"/>
+<div class="send_icon"><img alt="send message" id="send-icon" class="svg" src="svg/send_icon.svg"/></div>
+<textarea style="resize: none;" class="chatmsg"type="text" placeholder="Type a message" name="chat"></textarea>
 </form>
 </div>
-<!-- END Send message input -->
-
 </div>
-<div class="foot">
+<div class="foot lift">
     <div class="social-footer"> 
-        <p class="fc1">Or find me elsewhere..</p>
-        <div class="social_icon"><img alt="LinkedIn" id="media-icon" class="svg" src="svg/linkedin_icon.svg"/>
-        </div><div class="social_icon"><img alt="Youtube" id="media-icon" class="svg" src="svg/youtube_icon.svg"/></div>
+        <p class="fc4">Or find me elsewhere..</p>
+        <div class="social_icon"><img alt="LinkedIn" id="media-icon" class="svg" src="svg/linkedin_icon.svg"/></div>
+        <div class="social_icon"><img alt="Youtube" id="media-icon" class="svg" src="svg/youtube_icon.svg"/></div>
         <div class="social_icon"><img alt="Github" id="media-icon" class="svg" src="svg/github_icon.svg"/></div>
         <div class="social_icon"><img alt="Instructables" id="media-icon" class="svg" src="svg/instructables_icon.svg"/></div>
     </div>
 </div>
-
 </div>
-
+<!-- END Send message input -->
+</div>
+</div>
 </div>
 <!--END Contact PAGE CONTENT-->
-
     <!--alt bod end-->
     </div>
 
@@ -365,7 +373,23 @@ $(".ball_row").click(function () {
      
       //expand readmore c.v section
    });
-
+var cs_hi = "<?php echo $cs_hi ?>";
+var cs_00 = "<?php echo $cs_00 ?>";
+var cs_01 = "<?php echo $cs_01 ?>";
+var cs_02 = "<?php echo $cs_02 ?>";
+var cs_03 = "<?php echo $cs_03 ?>";
+var cs_04 = "<?php echo $cs_04 ?>";
+var back = [cs_00,cs_01,cs_02,cs_03,cs_04];
+var rand;
+  
+$('.chatsub').mouseover(function () {
+     rand = back[Math.floor(Math.random() * back.length)];
+  $("#send-icon").css("fill", rand);
+});
+// change send-icon back to $cs_hi on mouseout
+$('.chatsub').mouseout(function () {
+  $("#send-icon").css("fill", cs_hi);
+});
     $('#logo').mouseover(function () {
   $('#logo').addClass('pulse')
 });

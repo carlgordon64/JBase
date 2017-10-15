@@ -526,13 +526,13 @@ http://flickity.metafizzy.co
 ------------------------- */
 
 .button {
-  display: inline-block;
+/*  display: inline-block;
   padding: 5px 15px;
   margin-bottom: 10px;
   background-color: #F8F8F8;
   background-image: linear-gradient( hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.1) );
   border: 1px solid #CCC;
-  border-radius: 5px;
+  border-radius: 5px;*/
 }
 
 .button:enabled {
@@ -540,19 +540,19 @@ http://flickity.metafizzy.co
 }
 
 .button:enabled:hover {
-  background-color: #8CF;
+  /*background-color: #8CF;*/
 }
 
 .button.is-checked,
 .button.is-selected {
-  background-color: #19F;
-  color: white;
+  /*background-color: #19F;
+  color: white;*/
 }
 
 .button:active {
-  color: white;
+  /*color: white;
   background-color: #59F;
-  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);*/
 }
 
 /* hide radio inputs */

@@ -18,13 +18,9 @@ echo "
         </div>
          <div class='skillsover1 '>
          <div id='scroller'>
-      <ul>   
-      <li>UI Design<span class='rating' style='background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span><span class='r4'></span><span class='r5'></span></span></li>
-       <li>UX Design<span class='rating' style=' background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span><span class='r4'></span></span></span></li>
-       <li>Graphic Design<span class='rating' style=' background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span></span></span></li>
-       <li>Audition<span class='rating' style=' background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span><span class='r4'></span><span class='r5'></span></span></span></li>
-        <li>Premiere<span class='rating' style=' background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span><span class='r4'></span><span class='r5'></span></span></span></li>
-        </ul>
+         <div class='skill-verb'>
+      <p>I have done numerous coding courses over the span of my degree involving multiple languages suhch as ...</p>
+      </div>
         </div>
         </div>
 </div>
@@ -38,9 +34,9 @@ echo "
 <div class='avatar'><div class='avatarimg me' ></div></div>
 <div class='well' style='padding-top:10px; '>
     <p id='subhead' >Developer + Designer</p>
-    <div class='breaker'></div>
+    
 </div>
-<div class='well' style='padding:20px;padding-bottom:10px; '>
+<div class='well' style='padding:20px;padding-bottom:10px;padding-top:0px; '>
     <p id='rale' style='font-size:15px;'>Aficionado of Technology and Art with a Bachelor of Design Innovation, working as a Web Developer in Wellington, New Zealand.
     </p>
 </div>
@@ -64,13 +60,9 @@ echo "
         </div>
         <div class='skillsover2 '>
          <div id='scroller'>
-      <ul>   
-      <li>UI Design<span class='rating' style='background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span><span class='r4'></span><span class='r5'></span></span></li>
-       <li>UX Design<span class='rating' style=' background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span></span></span></li>
-       <li>Graphic Design<span class='rating' style=' background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span></span></span></li>
-       <li>Audition<span class='rating' style=' background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span></span></span></li>
-        <li>Premiere<span class='rating' style=' background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span><span class='r4'></span><span class='r5'></span></span></span></li>
-        </ul>
+         <div class='skill-verb'>
+      <p>I have experience working with languages such as java, javascript, php, css. I enjoy crafting creative new experiences for the web  </p>
+      </div>
         </div>
         </div>
         </div>

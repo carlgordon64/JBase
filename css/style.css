@@ -8,7 +8,13 @@ body {
   text-align: center;
   
 }
-
+.altbod{
+    height:auto;
+    margin:auto;
+    padding-top:100px;
+    max-width:1280px;
+    background:rgba(0,0,0,0.03);
+}
 /* ---- button ---- */
 .readmore{
   transition:0.4s ease all;
@@ -120,14 +126,14 @@ margin-left: -5px;
 }
 
 .button:hover {
-  background-color: rgba(255,255,255,0.8);
-  /*text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);*/
-  color: #222;
+  /*background-color: rgba(255,255,255,0.8);
+  text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
+  color: #222;*/
 }
 
 .button:active,
 .button.is-checked {
-  background-color: rgba(0,0,0,0.3);
+  /*background-color: rgba(0,0,0,0.3);*/
 }
 
 .button.is-checked {
@@ -422,7 +428,7 @@ z-index:10;
     width:100%;
     margin:auto;
     margin-top:80px;
-    height:300px;
+    height:200px;
     background:rgba(0,0,0,0);
     transition:0.4s ease all;
 }
@@ -455,7 +461,15 @@ z-index:10;
      border-radius:100%;
      background:transparent;
 }
-
+.skillsover2 .scroller{
+  background: red;
+}
+.skill-verb{
+  padding:10px;
+}
+.skill-verb p{
+color: #fff;
+}
 
 @-webkit-keyframes pulse{0%{-webkit-transform:scale(1.0);}
     50%{-webkit-transform:scale(0.9);}

@@ -8,7 +8,6 @@ $colorscheme = $_SESSION["colorset"];
 
 
 
-
 //colorscheme map
 //$cs_00= header bg color;
 //$cs_01= contacts bg color;
@@ -28,6 +27,7 @@ switch ($colorscheme) {
     $font_color2="#fff";
     $cs_hi = "#A3D0C1";
     $cs_tint = "#A3D0C1";
+    $cs_texture = "https://www.toptal.com/designers/subtlepatterns/patterns/round.png";
     $schematic = "mellow";
         break;
     case 2:
@@ -40,6 +40,7 @@ switch ($colorscheme) {
     $font_color2="#fff";
     $cs_hi = "#46C6B8";
     $cs_tint = "#ffffff";
+    $cs_texture = "https://www.toptal.com/designers/subtlepatterns/patterns/curls.png";
     $schematic = "nova";
         break;
     case 3:
@@ -52,6 +53,7 @@ switch ($colorscheme) {
     $font_color2="#fff";
     $cs_hi = "#FD775A";
     $cs_tint = "#FD775A";
+    $cs_texture = "https://www.toptal.com/designers/subtlepatterns/patterns/curls.png";
     $schematic = "vintage";
     break;
     case 4:
@@ -64,6 +66,7 @@ switch ($colorscheme) {
     $font_color2="#000";
     $cs_hi = "#F0CA4D";
     $cs_tint = "#F0CA4D";
+    $cs_texture = "https://www.toptal.com/designers/subtlepatterns/patterns/round.png";
     $schematic = "pineapple";
     break;
      case 5:
@@ -76,6 +79,7 @@ switch ($colorscheme) {
     $font_color2="#000";
     $cs_hi = "#0b2b35";
     $cs_tint = "#0b2b35";
+    $cs_texture = "https://www.toptal.com/designers/subtlepatterns/patterns/round.png";
     $schematic = "blanca";
     break;
     case 6:
@@ -88,6 +92,7 @@ switch ($colorscheme) {
     $font_color2="#fff";
     $cs_hi = "#E74C3C";
     $cs_tint = "#ffffff";
+    $cs_texture = "https://www.toptal.com/designers/subtlepatterns/patterns/round.png";
     $schematic = "honeypot";
     break;
      case 7:
@@ -100,6 +105,7 @@ switch ($colorscheme) {
     $font_color2="#000";
     $cs_hi = "#FF3D2E";
     $cs_tint = "#FF3D2E";
+    $cs_texture = "https://www.toptal.com/designers/subtlepatterns/patterns/round.png";
     $schematic = "futurama";
     break;
       case 8:
@@ -112,6 +118,7 @@ switch ($colorscheme) {
     $font_color2="#000";
     $cs_hi = "#2D5B5E";
     $cs_tint = "#2D5B5E";
+    $cs_texture = "https://www.toptal.com/designers/subtlepatterns/patterns/round.png";
     $schematic = "candyland";
     break;
      case 9:
@@ -124,6 +131,7 @@ switch ($colorscheme) {
     $font_color2="#fff";
     $cs_hi = "#FF9326";
     $cs_tint = "#FF9326";
+    $cs_texture = "https://www.toptal.com/designers/subtlepatterns/patterns/round.png";
     $schematic = "lemons";
     break;
     default:
@@ -132,10 +140,11 @@ switch ($colorscheme) {
     $cs_02="#F2F3F2";
     $cs_03="#A69B8C";
     $cs_04="#D6CCBC";
-    $font_color="#1b1f20";
+    $font_color="#fff";
     $font_color2="#1b1f20";
     $cs_hi = "#4CC1BB";
     $cs_tint = "#DBEFE7";
+    $cs_texture = "https://www.toptal.com/designers/subtlepatterns/patterns/round.png";
     $schematic = "arctic";
 }
 
@@ -318,6 +327,10 @@ body{
     width:100%; height:280px;  background:$cs_tint; opacity:0.3; margin:auto; position:absolute; top:0px;
 
 }
+.texturetint{
+    width:1000px; height:500px;  background:red; opacity:0.8; margin:auto; position:absolute; z-index:16; bottom:10;
+
+}
 .pagination{
     transition:0.4s ease all;
     border-radius:100%;
@@ -369,8 +382,9 @@ svg {
     fill: #fff;
     width:30px;
     height: auto;
-    margin:auto;
+    margin:auto; viewBox:0 0 250 250;
 }
+
 .social_icon{
     width:80px; height:80px;
     border-radius: 100%;
@@ -380,14 +394,50 @@ svg {
     display:inline-block;
 
 }
+.social_icon:hover{
+box-shadow: 0px 0.5px 15px rgba(0,0,0,0.1);
+    }
 .social_icon svg {
     transition:0.4s ease all;
-    fill: #fff;
+    fill: $cs_04;
     width:100%;
     height: auto;
     margin:auto;
     display:inline-block;
     margin-top:-12px;
+}
+.send_icon{
+    width:40px; height:40px;
+    border-radius: 100%;
+    top:-20px;
+    right:5px;
+    background:transparent;
+    position:relative;
+    z-index:15;
+    float:right;
+
+}
+.send_icon #send-icon {
+    transition:0.4s ease all;
+    fill: $cs_hi;
+    width:100%;
+    height: auto;
+    margin:auto;
+    display:inline-block;
+    margin-top:-6px;
+}
+.send-color{
+    transition:0.4s ease all;
+    fill:red;
+box-shadow: 0px 0.5px 15px rgba(0,0,0,0.1);
+    }
+    .chatsub:hover .send-icon svg{
+    transition:0.4s ease all;
+    fill: $cs_hi;
+    cursor:pointer;
+    opacity:0.9;
+    
+
 }
 .social_icon:hover #media-icon{
     transition:0.4s ease all;
@@ -397,9 +447,6 @@ svg {
     
 
 }
-.social_icon:hover{
-box-shadow: 0px 0.5px 15px rgba(0,0,0,0.1);
-    }
 nav svg {
     fill: #000;
     width:30px;
@@ -578,7 +625,11 @@ cursor:pointer;
     background:rgba(10,10,10,1);
     z-index:20;
 }
+.cvpage li{
+    list-style-type: none;
+    }
 .skills li{
+    list-style-type: none;
     color:white;
     font-size: 16px;
     background:rgba(255,255,255,0.1);
@@ -622,16 +673,19 @@ cursor:pointer;
      background:transparent;
 }
 .contact-footer{
-    width:60%;height:auto;margin:auto;background:rgba(255,255,255,0);
+    width:100%;height:auto;margin:auto;background:rgba(255,255,255,0);
 }
 .social-footer{
     width:60%; margin:auto; height:auto; background:rgba(255,255,255,0); position:absolute; bottom:10px; left:50%; margin-left:-30%;
 }
 .foot{
-    width:100%; min-height:250px; height:auto; background:rgba(255,255,255,0); position:relative; bottom:0px;
+    width:100%; min-height:250px; height:auto; background:rgba(255,255,255,0); position:relative; top:-50px;
 }
 .fc1{
     color:$font_color;
+}
+.fc4{
+    color:$cs_hi;
 }
 #subhead{
     font-size:24px;
@@ -651,13 +705,7 @@ cursor:pointer;
     font-family: 'Raleway', sans-serif;
 }
 
-.altbod{
-    height:auto;
-    margin:auto;
-    padding-top:150px;
-    max-width:1280px;
-    background:rgba(0,0,0,0.03);
-}
+
 
 .lassoHeadStretch{
         transition:0.6s ease all;
@@ -780,38 +828,146 @@ font-family: 'Raleway', sans-serif;
 }
 .ctpage{
     width:100%;
-    min-height:500px;
-    height:auto;
+    height:540px;
+    max-height:auto;
     background:$cs_04;
+
 } 
-.chatsub{
-    width:80px;height:80px;
-    background:$cs_hi;
-    border:2px solid transparent;
-    position:relative;
-    top:-80px;
-    float:right;
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;
+#cttexture {
+background:red;
+background-image:url('$cs_texture');
+background-repeat:repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity:0.5;
+  bottom: 0;
+  left: 0;
 }
-.chatsub:hover{
-cursor:pointer;
+#cttexture {
+  z-index: 10;
+}
+.cttint{
+ width:100%;
+ margin:auto;
+ position:relative;
+  z-index: 8;
+    height:540px;
+    overflow-y:hidden;
+    padding-top:20px;
+    max-height:auto;
+    top:0px;
+    background:$cs_01;
+    opacity:1;
+      -moz-box-shadow:   inset 0 -3px 10px rgba(0,0,0,0.4);
+   -webkit-box-shadow: inset 0 -3px 10px rgba(0,0,0,0.4);
+   box-shadow:        inset  0 -3px 10px rgba(0,0,0,0.4);
+   // border-top-left-radius: 20px;
+   //  border-top-right-radius: 20px;
     }
-    .chatmsg:hover{
-cursor:text;
+    .cttint .colorband{
+        width:100%;
+        height:10px;
+        background:red;
     }
-.chatmsg{
-    width:100%;
-    height:80px;
-    font-size:24px;
-    color:#1b1f20;
-    padding-left:10px;
-    padding-right:90px;
-    border:2px solid transparent;
+    .lift{
+        position:relative;
+    z-index:15;
+    }
+    .chatpop{
+        width:100%; margin:auto; height:auto; background:$cs_02;
+         padding:10px;padding-top:10px;padding-bottom:10px;
+         position:relative;
+    z-index:13;
     border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;
+    }
+.chatmsg{
+    transition:0.5s ease all;
+    width:100%;
+    position:relative;
+    z-index:10;
+    height:100px;
+    font-size:16px;
+    color:#1b1f20;
+    padding-left:15px;
+    padding-right:50px;
+    padding-top:10px;
+    margin-top:-60px;
+    border:2px solid transparent;
+    // border-top-left-radius: 15px;
+    // border-bottom-right-radius: 15px;
+    // border-top-right-radius: 15px;
+    // border-bottom-left-radius: 15px;
+}
+.chatmsg:hover{
+transition:0.5s ease all;
+height:150px;
+}
+.chatsub{
+    width:30px;height:30px;
+    background:rgba(0,0,0,0);
+    color:#fff;
+    font-size:18px;
+    border:2px solid transparent;
+    border-radius:100%;
+    position:relative;
+    z-index:20;
+    float:right;
+    top:55px;
+    right:10px;
+    
+}
+.chatsub:hover{
+cursor:pointer;
+    }
+
+.chatsubject{
+ width:100%;
+    z-index:12;
+ position:relative;
+ top:-20px;
+ margin:auto;
+    height:40px;
+    font-size:16px;
+    color:#1b1f20;
+    border:2px solid transparent;
+     border-bottom:1px solid #e0e0e0;
+    padding-left:15px;
+    padding-right:55px;
+    
+}
+.chatname{
+ width:49%;
+ display:inline-block;
+ margin:auto;
+    height:40px;
+    font-size:16px;
+    color:#1b1f20;
+    padding-left:15px;
+     padding-right:10px;
+    border:2px solid transparent;
+    // border-top-left-radius: 15px;
+    // border-bottom-right-radius: 15px;
+    // border-top-right-radius: 15px;
+    // border-bottom-left-radius: 15px;
+}
+.chataddress{
+ width:50%;
+ display:inline-block;
+ margin:auto;
+    height:40px;
+    font-size:16px;
+    color:#1b1f20;
+    padding-left:15px;
+    padding-right:10px;
+    border:2px solid transparent;
+    // border-top-left-radius: 15px;
+    // border-bottom-right-radius: 15px;
+    // border-top-right-radius: 15px;
+    // border-bottom-left-radius: 15px;
 }
 /*Media @ 760px or larger*/
 @media screen and (min-width: 760px) {
