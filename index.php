@@ -303,7 +303,7 @@ background:rgba(0,0,0,0.1);
     <div class="social-footer"> 
         <p class="fc4">Or find me elsewhere..</p>
         <div class="social_icon"><img alt="LinkedIn" id="media-icon" class="svg" src="svg/linkedin_icon.svg"/></div>
-        <div class="social_icon"><img alt="Youtube" id="media-icon" class="svg" src="svg/youtube_icon.svg"/></div>
+        <div class="social_icon"><img alt="Skype" id="media-icon" class="svg" src="svg/skype_icon.svg"/></div>
         <div class="social_icon"><img alt="Github" id="media-icon" class="svg" src="svg/github_icon.svg"/></div>
         <div class="social_icon"><img alt="Instructables" id="media-icon" class="svg" src="svg/instructables_icon.svg"/></div>
     </div>
