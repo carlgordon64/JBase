@@ -211,6 +211,12 @@ font-size:14px;
 color:#fff;
 text-align: center;
   }
+  .text-shade{
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  }
+   .text-shade-lite{
+    text-shadow: 2px 2px 8px rgba(80,80,80,0.25);
+  }
 .element-title{
   /*font-family: 'Lato', sans-serif;*/
   font-family: 'Comfortaa', cursive;
@@ -471,6 +477,8 @@ z-index:10;
 color: #fff;
 }
 
+/*  PULSE */
+
 @-webkit-keyframes pulse{0%{-webkit-transform:scale(1.0);}
     50%{-webkit-transform:scale(0.9);}
     100%{-webkit-transform:scale(1.0);}
@@ -480,6 +488,18 @@ color: #fff;
 100%{transform:scale(1.0);}
 }
 .pulse{-webkit-animation:pulse 1.2s normal;-moz-animation:pulse 1.2s normal;-ms-animation:pulse 1.2s normal;animation:pulse 1.2s normal;}
+
+/*  BIG PULSE */
+
+@-webkit-keyframes bigpulse{0%{-webkit-transform:scale(1);}
+    50%{-webkit-transform:scale(0.2);}
+    100%{-webkit-transform:scale(1.8);}
+}
+@keyframes bigpulse{0%{transform:scale(1);}
+50%{transform:scale(0.2);}
+100%{transform:scale(1.8);}
+}
+.bigpulse{-webkit-animation:pulse 1.2s normal;-moz-animation:pulse 1.2s normal;-ms-animation:pulse 1.2s normal;animation:pulse 1.2s normal;}
 
 .altnav{
     position:fixed; top:76px; background:rgba(0,0,0,0.4); width:100%; height:30px; margin:auto;
@@ -533,7 +553,7 @@ border-top-left-radius:10px;
 .altbod{
     height:auto;
     margin:auto;
-    padding-top:280px;
+    padding-top:170px;
     max-width:1280px;
     background:rgba(0,0,0,0.1);
 }

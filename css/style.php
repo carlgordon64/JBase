@@ -87,7 +87,7 @@ switch ($colorscheme) {
     $cs_01="#2C3E50";
     $cs_02="#E74C3C";
     $cs_03="#ECF0F1";
-    $cs_04="#3498DB";
+    $cs_04="#1F618C";
     $font_color="#fff";
     $font_color2="#fff";
     $cs_hi = "#E74C3C";
@@ -189,6 +189,9 @@ $color_iterate = ${'cs_0' . $ii};
         transition:1s ease all;
         z-index:15;
  border-radius:100%; width:20px; height:20px; position:inherit; margin:auto; margin-left:-10px; top:0px; background:$color_iterate;  opacity:0.3; 
+    }
+    .chatbox{
+        width:50%; margin:auto;
     }
 
      .lassoHeadStretch$i{
@@ -688,6 +691,7 @@ cursor:pointer;
     color:$cs_hi;
 }
 #subhead{
+font-family: 'Comfortaa', cursive;
     font-size:24px;
 }
 .well p{
@@ -975,6 +979,27 @@ cursor:pointer;
     }
 /*Media @ 760px or smaller*/
 @media screen and (max-width: 760px) {
+    .ctpage{
+    height:640px;
+
+} 
+.cttint{
+    height:640px;
+
+}
+    #mydiv {
+margin-top:70px;
+}
+
+.chatbox{
+    width:70%; margin:auto;
+}
+.chatname{
+ width:100%;
+ }
+ .chataddress{
+ width:100%;
+}
     .social-footer{
     width:100%;
     bottom:10px; left:0px; margin-left:0px;
@@ -989,8 +1014,23 @@ cursor:pointer;
   width: 85%;
 }
 }
-/*Media @ 480px or smaller*/
-@media screen and (max-width: 480px) {
+/*Media @ 495px or smaller*/
+@media screen and (max-width: 495px) {
+    .social_icon{
+    width:60px; height:60px;
+}
+.chatbox{
+    width:85%; margin:auto;
+}
+.social-footer{
+    width:100%;
+    padding-left:50px;
+    padding-right:50px;
+    margin:auto;
+}
+    .foot{
+margin-top:20px;
+    }
     .caro-date{ bottom:70px; left:0px;
 }
     .carousel-cell {
@@ -1005,9 +1045,11 @@ cursor:pointer;
  .pagination{
     transition:0.4s ease all;
     border-radius:0%;
-    width:100%; height:60px; margin:auto; background:rgba(0,0,0,0.05);
-    border:2px solid white; text-align:center; color:white;
+    width:100%; height:50px; margin:auto; background:rgba(0,0,0,0.05);
+    border:none;
+    border-bottom:1px solid rgba(255,255,255,0.4); text-align:center; color:white;
 }
+
     }
 </style>
 ";

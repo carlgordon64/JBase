@@ -4,7 +4,7 @@ echo "
 <div class='row' style='background:rgba(255,255,255,0); text-align:center;'>
 <div class='col-md-4 cvleft' style='height:auto;'>
 <div class='well'>
-    <p id='subhead'style='padding-top:15px; '>Development</p>
+    <p id='subhead'class='text-shade-lite'style='padding-top:15px; '>Development</p>
     <div class='skills' id='skillpop1'>
         <div id='scroller' >
         <ul>   
@@ -29,15 +29,15 @@ echo "
 </div>
 <div class='mid col-md-4 cvmid' style=' height:500px;'>
 <div class='well'>
-<p id='rale' style=' font-size:32px;'>Hi, I'm Carl Gordon</p>
+<p id='comfortaa' class='text-shade-lite' style=' font-size:32px; margin-top:10px;'>Hi, I'm Carl Gordon</p>
 </div>
 <div class='avatar'><div class='avatarimg me' ></div></div>
 <div class='well' style='padding-top:10px; '>
-    <p id='subhead' >Developer + Designer</p>
+    <p class='text-shade-lite' id='subhead' >Developer + Designer</p>
     
 </div>
 <div class='well' style='padding:20px;padding-bottom:10px;padding-top:0px; '>
-    <p id='rale' style='font-size:15px;'>Aficionado of Technology and Art with a Bachelor of Design Innovation, working as a Web Developer in Wellington, New Zealand.
+    <p class='text-shade-lite' id='rale' style='font-size:15px;'>Aficionado of Technology and Art with a Bachelor of Design Innovation, working as a Web Developer in Wellington, New Zealand.
     </p>
 </div>
 <div class='well'>
@@ -46,7 +46,7 @@ echo "
 </div>
 <div class='col-md-4 cvright' style=' height:500px;'>
 <div class='well'>
-    <p id='subhead' style='padding-top:15px;'>Design</p>
+    <p id='subhead' class='text-shade-lite' style='padding-top:15px;'>Design</p>
     <div class='skills' id='skillpop2'>
         <div id='scroller'>
       <ul>   
@@ -75,25 +75,25 @@ echo "
     <div class='col-md-4 cvleft' style='height:auto;'>
         <div class='well' style='padding-top:0px; '>
         
-    <p id='subhead'>Experience:</p>
+    <p class='text-shade-lite' id='subhead'>Experience:</p>
     <div class='smallbreaker'></div>
-    <ul>
+    <ul class='text-shade-lite'>
     <li><p>Web Developer - CodeClouds NZ - 31/6/17 until present.</p></li>
     </ul>
 </div>
     </div>
     <div class='mid col-md-4 cvmid2' style='height:auto;'>
 <div class='well' style='padding:20px;padding-top:0px; '>
-    <p id='rale' style='font-size:15px;'>
+    <p id='rale' class='text-shade-lite' style='font-size:15px;'>
 Driven by a passion for Innovative technology I have studied to become a full stack developer, as well as an aspiring product designer. I am specialised in the areas of Wearable Technology, Arduino, html, CSS, php, SQL and JavaScript. Currently working with E-commerce sites, mastering the art of internet marketing and application development.
     In my spare time you can catch me snowboarding at Mt. Ruapehu or tinkering in the workshop..</p>
 </div>
     </div>
     <div class='col-md-4 cvright' style='height:auto;'>
         <div class='well' style='padding-top:0px; '>
-    <p id='subhead'>Education:</p>
+    <p class='text-shade-lite' id='subhead'>Education:</p>
     <div class='smallbreaker'></div>
-    <ul>
+    <ul class='text-shade-lite'>
     <li><p>Bachelor of Design Innovation - Victoria University Wellington</p></li>
     <li><p>NCEA Level 3 - Napier Boys' High School</p></li>
     </ul>

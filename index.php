@@ -143,6 +143,9 @@ background:rgba(0,0,0,0.1);
     color:#fff;
     text-shadow: 2px 3px 2px rgba(0,0,0,0.2);
 }
+#comfortaa{
+  font-family: 'Comfortaa', cursive;
+}
 .welcometitle{
     height:auto;
     width:100%;
@@ -157,7 +160,7 @@ background:rgba(0,0,0,0.1);
 <nav style="background:<? echo $color_00 ?>; position:fixed; z-index:32;width:100%;"class="dead navbar navbar-default fixed-top">
   <p id="homebtn" style="position:fixed; margin-top:18px; margin-left:10px;">HOME</p>
   <div class="row" >
-  <div style="width:330px;  height:2px; position:fixed; background:#000; margin-top:30px; left:50%; margin-left:-165px;"></div>
+  <div style="width:330px;  height:2px; position:fixed; background:<? echo $cs_hi ?>;opacity:0.45; margin-top:30px; left:50%; margin-left:-165px;"></div>
 
 <!-- margin left - (col-xs-3 padding + pagination width)/2 -->
 <div class="row"style="width:360px; position:relative; z-index:15; left:50%; margin-left:-160px;">
@@ -279,12 +282,12 @@ background:rgba(0,0,0,0.1);
 
 <div class="contact-footer">
 <div class="cttint" >
-<p class="fc4 lift" style='font-size:32px;'>Leave me a message</p>
+<p class="fc4 lift text-shade" id="comfortaa"style='font-size:32px;'>Get in touch!</p>
 <div id="cttexture"></div>
 
 <!-- Send message input -->
 
-<div style="width:50%; margin:auto;">
+<div class="chatbox" style="">
 
 <div class="chatpop">
 <form action="#">
@@ -301,7 +304,7 @@ background:rgba(0,0,0,0.1);
 </div>
 <div class="foot lift">
     <div class="social-footer"> 
-        <p class="fc4">Or find me elsewhere..</p>
+        <p class="fc4 text-shade" id="comfortaa">Or find me elsewhere..</p>
         <div class="social_icon"><img alt="LinkedIn" id="media-icon" class="svg" src="svg/linkedin_icon.svg"/></div>
         <div class="social_icon"><img alt="Skype" id="media-icon" class="svg" src="svg/skype_icon.svg"/></div>
         <div class="social_icon"><img alt="Github" id="media-icon" class="svg" src="svg/github_icon.svg"/></div>
@@ -406,12 +409,14 @@ $('.scrolltop').click(function () {
     });
 
 //PAGE HANDLERS
- //element-panel on element-item click
+ //element-panel on element-item mouseover
  $('.element-item').mouseover(function () {
 $('.category-label').addClass('pull-up');
+$('.eyeball').addClass('bigpulse');
  });
   $('.element-item').mouseout(function () {
 $('.category-label').removeClass('pull-up');
+ $('.eyeball').removeClass('bigpulse');
  });
 $('.element-item').click(function () {
     // $('.element-panel').toggleClass('active')
