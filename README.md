@@ -1,13 +1,17 @@
 # JBase
-revamped folio focused on animation and user experience.
+re-designed folio focused on animation and user experience.
 
-Latest version features: Flickity Carousel for blog tiles, sliding inside divs for project tiles, tear away navigation bar, intuitive scrolling, bottom mobile navigation, dynamic styling with shuffle function, sharp svg icons, isotope project handler. 
+Latest version features: Animated skill bars, textured footer, responsive top section, responsive contact section,
 
 Recently done: 
 
-- CG Logo added
-- C.V section near complete
-- Navigation bar optimised for all resolutions
-- Begun work on contact section (looking at integrating chatbot)
+- Animated skill bars added to C.V section
+- Subtle textures added to color schemes
+- Swapped youtube social icon for skype
+
+Notes:
+
+Need to make skillbars more responsive especially for tablet resolution 1080px - 480px 
+Aiming to make the site suitable for freelance web clients 
 
 

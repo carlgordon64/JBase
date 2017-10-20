@@ -1,3 +1,11 @@
+
+<style type="text/css">
+  .skills ul{
+  padding:0px;
+  margin:0;
+}
+
+</style>
 <?php
 echo "
 <div class='cvpage' style='overflow:hidden;'>
@@ -5,25 +13,55 @@ echo "
 <div class='col-md-4 cvleft' style='height:auto;'>
 <div class='well'>
     <p id='subhead'class='text-shade-lite'style='padding-top:15px; '>Development</p>
-    <div class='skills' id='skillpop1'>
-        <div id='scroller' >
-        <ul>   
-        <li>Php<span class='rating' style='background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span><span class='r4'></span><span class='r5'></span></span></li>
-       <li>JavaScript<span class='rating' style=' background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span><span class='r4'></span></span></span></li>
-       <li>Processing<span class='rating' style=' background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span><span class='r4'></span><span class='r5'></span></span></span></li>
-       <li>SQL<span class='rating' style=' background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span><span class='r4'></span><span class='r5'></span></span></span></li>
-        <li>JQuery<span class='rating' style=' background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span><span class='r4'></span><span class='r5'></span></span></span></li>      
-        <li>CSS<span class='rating' style=' background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span><span class='r4'></span><span class='r5'></span></span></span></li>  
-        </ul>
+        <div class='skills' id='skillpop1'>
+        <div id='scroller'>
+        <ul class='skillslist'>
+  <a title='Expert'><li><p>HTML5</p>
+<div class='myProgress1'>
+  <div class='myBar'></div>
+</div>
+</li></a>
+
+<a title='Master'><li><p>CSS</p>
+<div class='myProgress2'>
+  <div class='myBar'></div>
+</div>
+</li></a>
+
+<a title='Intermediate'><li><p>PHP</p>
+<div class='myProgress3'>
+  <div class='myBar'></div>
+</div>
+</li></a>
+
+<a title='Expert'><li><p>JQuery</p>
+<div class='myProgress4'>
+  <div class='myBar'></div>
+</div>
+</li></a>
+
+<a title='Expert'><li><p>JS</p>
+<div class='myProgress5'>
+  <div class='myBar'></div>
+</div>
+</li></a>
+
+<a title='Expert'><li><p>SQL</p>
+<div class='myProgress6'>
+  <div class='myBar'></div>
+</div>
+</li></a>
+</ul>
         </div>
-         <div class='skillsover1 '>
+        <div class='skillsover1 '>
          <div id='scroller'>
          <div class='skill-verb'>
-      <p>I have done numerous coding courses over the span of my degree involving multiple languages suhch as ...</p>
+      <p>I have experience working with languages such as java, javascript, php, css. I enjoy crafting creative new experiences for the web  </p>
       </div>
         </div>
         </div>
-</div>
+         </div>
+
 
     </div>
 </div>
@@ -36,7 +74,7 @@ echo "
     <p class='text-shade-lite' id='subhead' >Developer + Designer</p>
     
 </div>
-<div class='well' style='padding:20px;padding-bottom:10px;padding-top:0px; '>
+<div class='well res-pad'>
     <p class='text-shade-lite' id='rale' style='font-size:15px;'>Aficionado of Technology and Art with a Bachelor of Design Innovation, working as a Web Developer in Wellington, New Zealand.
     </p>
 </div>
@@ -49,19 +87,48 @@ echo "
     <p id='subhead' class='text-shade-lite' style='padding-top:15px;'>Design</p>
     <div class='skills' id='skillpop2'>
         <div id='scroller'>
-      <ul>   
-      <li>PhotoShop<span class='rating' style='background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span><span class='r4'></span><span class='r5'></span></span></li>
-       <li>Illustrator<span class='rating' style=' background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span><span class='r4'></span></span></span></li>
-       <li>MockPlus<span class='rating' style=' background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span></span></span></li>
-       <li>Audition<span class='rating' style=' background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span><span class='r4'></span><span class='r5'></span></span></span></li>
-        <li>Premiere<span class='rating' style=' background-size: cover;'><span class='r1'></span><span class='r2'></span><span class='r3'></span><span class='r4'></span><span class='r5'></span></span></span></li>
-        
-      </ul>
+      <ul class='skillslist'>
+  <a title='Master'><li><p>PhotoShop</p>
+<div class='myProgress7'>
+  <div class='myBar'></div>
+</div>
+</li></a>
+
+<a title='Expert'><li><p>Illustrator</p>
+<div class='myProgress8'>
+  <div class='myBar'></div>
+</div>
+</li></a>
+
+<a title='Expert'><li><p>Mock Plus</p>
+<div class='myProgress9'>
+  <div class='myBar'></div>
+</div>
+</li></a>
+
+<a title='Intermediate'><li><p>Maya</p>
+<div class='myProgress10'>
+  <div class='myBar'></div>
+</div>
+</li></a>
+
+<a title='Intermediate'><li><p>Premiere Pro</p>
+<div class='myProgress11'>
+  <div class='myBar'></div>
+</div>
+</li></a>
+
+<a title='Intermediate'><li><p>InDesign</p>
+<div class='myProgress12'>
+  <div class='myBar'></div>
+</div>
+</li></a>
+</ul>
         </div>
         <div class='skillsover2 '>
          <div id='scroller'>
          <div class='skill-verb'>
-      <p>I have experience working with languages such as java, javascript, php, css. I enjoy crafting creative new experiences for the web  </p>
+      <p>I have a vast range of experience with various design softwares.<br> My combined knowledge of each tool gives me total control over the visual content of any web page.</p>
       </div>
         </div>
         </div>

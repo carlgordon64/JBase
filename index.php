@@ -37,12 +37,14 @@ if(isset($_POST['add'])){
  $_SESSION["colorset"] = $colorset;
 
  include('css/style.php');
+ include('css/progress-bar-style.php');
 
 $color_hi = $_SESSION["color_hi"] ;
 $color_00 = $_SESSION["color_00"] ;
 
 
 ?>
+
     <script type="text/javascript">
 var popup = 0;
 var cv = 0;
@@ -50,6 +52,7 @@ var pj = 0;
 var bl = 0;
 var ct = 0;
     </script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
     <style type="text/css">
 
 
@@ -323,6 +326,23 @@ background:rgba(0,0,0,0.1);
 </body>
 <script src="svg_control.js"></script>
 <script src="lasso_control.js"></script>
+<script>
+
+
+function skillfadeIn(){
+  $('.myBar').addClass('myBarFill')
+}
+$( window ).scroll(function() {
+  setTimeout(skillfadeIn, 500);
+});
+ 
+
+function fadeOut(){
+  $('.myBar').removeClass('myBarFill')
+}
+
+
+</script>
 <script type="text/javascript">
 
 

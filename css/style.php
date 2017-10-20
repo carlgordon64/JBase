@@ -591,7 +591,7 @@ overflow:hidden;
 .skills{
     width:90%;
     margin:auto;
-    height:394px;
+    height:372px;
     overflow:hidden;
     /* bg originally $cs_02 */
     background:rgba(0,0,0,0.05);
@@ -611,7 +611,7 @@ cursor:pointer;
     }
 .skillsover1{
     position:relative;
-    top:-394px;
+    top:-372px;
     width:100%;
     height:394px;
     background:rgba(10,10,10,1);
@@ -622,7 +622,7 @@ cursor:pointer;
     }
 .skillsover2{
     position:relative;
-    top:-394px;
+    top:-372px;
     width:100%;
     height:394px;
     background:rgba(10,10,10,1);
@@ -632,14 +632,14 @@ cursor:pointer;
     list-style-type: none;
     }
 .skills li{
-    list-style-type: none;
-    color:white;
-    font-size: 16px;
-    background:rgba(255,255,255,0.1);
-    padding-top:20px;
-    padding-bottom:20px;
-    text-align: center;
-    border-bottom:2px solid $cs_01;
+    // list-style-type: none;
+    // color:white;
+    // font-size: 16px;
+    // background:rgba(255,255,255,0.1);
+    // padding-top:20px;
+    // padding-bottom:20px;
+    // text-align: center;
+    // border-bottom:2px solid $cs_01;
 }
 .avatar{
     width:200px;
@@ -959,7 +959,7 @@ cursor:pointer;
     // border-bottom-left-radius: 15px;
 }
 .chataddress{
- width:50%;
+ width:49%;
  display:inline-block;
  margin:auto;
     height:40px;
@@ -973,12 +973,32 @@ cursor:pointer;
     // border-top-right-radius: 15px;
     // border-bottom-left-radius: 15px;
 }
+.res-pad{
+    padding:20px;padding-bottom:10px;padding-top:0px;
+}
 /*Media @ 760px or larger*/
 @media screen and (min-width: 760px) {
 
     }
 /*Media @ 760px or smaller*/
 @media screen and (max-width: 760px) {
+    .chatname{
+ width:100%;
+ border-bottom:1px solid #e0e0e0;
+ }
+ .chataddress{
+ width:100%;
+}
+    .cvmid{
+    padding-top:30px;
+}
+    .res-pad{
+padding-left:100px;
+padding-right:100px;
+    }
+    #more{
+    display:none;
+}
     .ctpage{
     height:640px;
 
@@ -994,12 +1014,7 @@ margin-top:70px;
 .chatbox{
     width:70%; margin:auto;
 }
-.chatname{
- width:100%;
- }
- .chataddress{
- width:100%;
-}
+
     .social-footer{
     width:100%;
     bottom:10px; left:0px; margin-left:0px;
@@ -1016,17 +1031,26 @@ margin-top:70px;
 }
 /*Media @ 495px or smaller*/
 @media screen and (max-width: 495px) {
+    .cvmid{
+    padding-top:15px;
+}
+    .res-pad{
+padding-left:60px;
+padding-right:60px;
+    }
     .social_icon{
     width:60px; height:60px;
+    display:inline-block;
 }
 .chatbox{
     width:85%; margin:auto;
 }
 .social-footer{
     width:100%;
-    padding-left:50px;
-    padding-right:50px;
+    padding-left:55px;
+    padding-right:55px;
     margin:auto;
+    // background:rgba(255,0,0,0.5);
 }
     .foot{
 margin-top:20px;
